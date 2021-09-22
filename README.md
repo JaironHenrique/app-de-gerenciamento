@@ -1,2 +1,2 @@
-# app-de-gerenciamento
-Projeto para a faculdade, gerar um sistema de gerenciamento e organização da vida pessoal e trabalhos.
+# App de Gerenciamento
+Projeto criado para um trabalho da faculdade, objetivando construir um sistema de gerenciamento e organização da vida pessoal, acadêmica e profissional.
