@@ -1,5 +1,18 @@
 @charset "UTF-8";
 /* Gerais */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .row {
   margin: 0;
 }
@@ -47,5 +60,36 @@ header, .navbar {
 
 .nav-item.active {
   border-bottom: 3px solid #FFF;
+}
+
+/* Página de login */
+.form-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.formlogin {
+  background-color: #353D41;
+  border: 20px solid #353D41;
+  border-radius: 20px;
+}
+
+.form-inline {
+  background-color: #353D41;
+  border: 20px solid #353D41;
+  border-radius: 20px;
+}
+
+.text-center {
+  color: #FFF;
+}
+
+.btn-block {
+  width: 49%;
+}
+
+.btn-block1 {
+  width: 100%;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
