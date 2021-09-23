@@ -1,4 +1,6 @@
 /* Gerais */
+$cor_da_fonte: #FFF
+$cor_do_fundo: #353D41
 
 html,body
     height: 100%
@@ -20,42 +22,47 @@ p, li
 /* Barra de navegação */
 
 header, .navbar
-    background-color: #353D41
+    background-color: $cor_do_fundo
   
 #nav-container
-    padding-top: 0
-    padding-bottom: 0
+    padding:
+        top: 0
+        bottom: 0
   
 #logo
     width: 75px
-    color: #FFF
+    color: $cor_da_fonte
   
 .navbar-brand
     padding: 0
-    color: #FFF
+    color: $cor_da_fonte
   
 .navbar-brand:hover
-    color: #FFF
+    color: $cor_da_fonte
   
-#navbar-links a
-    color: #FFF
+#navbar-links 
+    a
+        color: $cor_da_fonte
   
 .navbar-expand-lg .navbar-nav .nav-link
     padding: 1rem .8rem
   
 .nav-item.active
-    border-bottom: 3px solid #FFF
+    border:
+        bottom: 3px solid $cor_da_fonte
 
 /* Página de login */
 
 @mixin forma_login()
-    background-color: #353D41
-    border: 20px solid #353D41
-    border-radius: 20px
+    background:
+        color: $cor_do_fundo
+    border: 20px solid $cor_do_fundo
+        radius: 20px
 
 .form-group
-    margin-top: 5px
-    margin-bottom: 5px
+    margin:
+        top: 5px
+        bottom: 5px
     
 
 .formlogin 
@@ -66,11 +73,12 @@ header, .navbar
     @include forma_login()
 
 .text-center
-    color: white
+    color: $cor_da_fonte
 
 .btn-block
     width: 49%
 
 .btn-block1 
     width: 100%
-    margin-top: 5px
+    margin:
+        top: 5px
