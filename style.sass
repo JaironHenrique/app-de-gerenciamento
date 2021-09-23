@@ -1,5 +1,12 @@
 /* Gerais */
 
+html,body
+    height: 100%
+
+body
+    display: flex
+    align-items: center
+
 .row
   margin: 0
 
@@ -38,3 +45,32 @@ header, .navbar
   
 .nav-item.active
     border-bottom: 3px solid #FFF
+
+/* Página de login */
+
+@mixin forma_login()
+    background-color: #353D41
+    border: 20px solid #353D41
+    border-radius: 20px
+
+.form-group
+    margin-top: 5px
+    margin-bottom: 5px
+    
+
+.formlogin 
+    @include forma_login()
+    
+
+.form-inline    
+    @include forma_login()
+
+.text-center
+    color: white
+
+.btn-block
+    width: 49%
+
+.btn-block1 
+    width: 100%
+    margin-top: 5px

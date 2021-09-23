@@ -5,12 +5,8 @@ html, body {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .row {
@@ -92,4 +88,5 @@ header, .navbar {
   width: 100%;
   margin-top: 5px;
 }
+
 /*# sourceMappingURL=style.css.map */
