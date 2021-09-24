@@ -1,13 +1,17 @@
 /* Gerais */
 $cor_da_fonte: #FFF
-$cor_do_fundo: #353D41
+$cor_de_fundo_primaria: #000080
+$cor_de_fundo_secundaria: #800080
 
 html,body
     height: 100%
 
 body
     display: flex
-    align-items: center
+    align:
+        items: center
+    background:
+        color: $cor_de_fundo_primaria
 
 .row
   margin: 0
@@ -17,12 +21,14 @@ body
 
 p, li
     color: #444
-    font-size: 14px
+    font:
+        size: 14px
 
 /* Barra de navegação */
 
 header, .navbar
-    background-color: $cor_do_fundo
+    background:
+        color: $cor_de_fundo_secundaria
   
 #nav-container
     padding:
@@ -55,8 +61,8 @@ header, .navbar
 
 @mixin forma_login()
     background:
-        color: $cor_do_fundo
-    border: 20px solid $cor_do_fundo
+        color: $cor_de_fundo_secundaria
+    border: 20px solid $cor_de_fundo_secundaria
         radius: 20px
 
 .form-group
@@ -78,7 +84,7 @@ header, .navbar
 .btn-block
     width: 49%
 
-.btn-block1 
+.btn-block_conta 
     width: 100%
     margin:
         top: 5px
