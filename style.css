@@ -11,6 +11,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #000080;
 }
 
 .row {
@@ -28,7 +29,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #353D41;
+  background-color: #800080;
 }
 
 #nav-container {
@@ -69,14 +70,14 @@ header, .navbar {
 }
 
 .formlogin {
-  background-color: #353D41;
-  border: 20px solid #353D41;
+  background-color: #800080;
+  border: 20px solid #800080;
   border-radius: 20px;
 }
 
 .form-inline {
-  background-color: #353D41;
-  border: 20px solid #353D41;
+  background-color: #800080;
+  border: 20px solid #800080;
   border-radius: 20px;
 }
 
