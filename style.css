@@ -120,16 +120,11 @@ header, .navbar {
 }
 
 .card:hover{
-  background: yellow;
-  filter: grayscale(0);
+  background: rgb(0, 119, 255);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   cursor: pointer;
   
-}
-
-.card:hover .card-body{
-  color: black;
 }
 
 .container, .container-fluid{
