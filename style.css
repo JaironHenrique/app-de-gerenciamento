@@ -96,6 +96,7 @@ header, .navbar {
 /*# sourceMappingURL=style.css.map */
 
 /* Desenvolvedores */
+
 .card{
   border-radius: 10%;
   border-width: 0;
@@ -104,8 +105,8 @@ header, .navbar {
 }
 
 .card-body, .card-title, .card-text{
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .card-link{
@@ -119,7 +120,7 @@ header, .navbar {
 }
 
 .card:hover{
-  background: rgba(226, 213, 38, 0.904);
+  background: yellow;
   filter: grayscale(0);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -127,6 +128,42 @@ header, .navbar {
   
 }
 
-.card-body:hover{
+.card:hover .card-body{
   color: black;
 }
+
+.container{
+  position:relative;
+  top: 50px;
+  width:100%;
+  height:75%;
+}
+
+.container h1{
+  padding-bottom: 25px;
+}
+
+.container h1, .container p{
+  color: white;
+}
+
+#team-area{
+  position:relative;
+  margin-bottom: 200px;
+}
+
+.heading,#team-area{
+  margin-bottom:50px;
+  font-size: 50px;
+}
+
+#amanda,#ezequiel,#jairon,#sofia{
+  padding: 50px; 
+  background-color: rgba(97, 4, 134, 0.89);
+  margin-top: 200px;
+}
+
+#sofia{
+  margin-bottom: 200px;
+}
+
