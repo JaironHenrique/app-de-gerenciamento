@@ -94,6 +94,10 @@ header, .navbar {
   margin-top: 5px;
 }
 
+.body-login {
+  background-color: #000080;
+}
+
 /* Slider */
 .container-fluid {
   padding: 0;
