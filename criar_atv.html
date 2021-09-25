@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/STARFOCUS - logo.ico">
     <link rel="stylesheet" href="style.css">
 
-    <title>Criar conta | S.T.A.R.F.O.C.U.S.</title>
+    <title>Minhas atividades | S.T.A.R.F.O.C.U.S.</title>
 </head>
 <body>
     <header>
@@ -36,29 +36,51 @@
             </nav>
         </div>
     </header>
-    <div class = "container">
+
+    <div class="container-fluid">
+        <div class="card text-center" id="card-servicos">
+            <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="servicos_desempenho.html">Desempenho</a>
+                </li>
+            </ul>
+            </div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Título especial</h5>-->
+            <p class="card-text">Puxa, parece que você ainda não adicionou nenhuma atividade para monitorar :(</p>
+            <a href="criar_atv.html" class="btn btn-primary">Nova atividade</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container" id="nova-atv">
         <div class="justify-content-center align-items-center row">
             <div class="col-4">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nome" class="form-control"/>
+                <form class="formlogin">
+                    <div class="text-center mb-3">
+                        <h2>O que você gostaria de monitorar?</h2>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Sobrenome" class="form-control"/>
-                    </div> 
+                        <input type="text" placeholder="Digite um rótulo para sua atividade" class="form-control"/>
+                    </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Nome de Usuário" class="form-control"/>
-                    </div>    
-                    <div class="input-group">
-                        <input type="text" placeholder="Senha" class="form-control"/>
-                        <input type="text" placeholder="Confirmar" class="form-control"/>
+                        <textarea type="text" placeholder="Descrição (opcional)" class="form-control" rows=5></textarea>
                     </div>
                     <div>
-                        <a class="btn btn-success btn-block1" href="index.html" role="button">Finalizar</a> 
+                        <a class="btn btn-danger btn-block" href="servicos_atv.html" role="button">Cancelar</a>
+                        <a class="btn btn-success btn-block" href="#" role="button">Começar hábito!</a> 
                     </div>
                 </form>
             </div>
         </div> 
     </div>
+
 </body>
 </html>

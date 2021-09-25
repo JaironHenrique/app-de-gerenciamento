@@ -93,3 +93,30 @@ header, .navbar {
   margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/*------------------------------------------------------------------*/
+/*Serviços*/
+
+.navbar-text {
+  color:azure;
+}
+
+/*#card-servicos {
+  margin-top: 1px;
+}*/
+
+#sigla {
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+#titulo-comp {
+  font-size: smaller;
+}
+
+#nova-atv{
+  position:fixed;
+  margin-left: 100px;
+  margin-right:100px;
+}
