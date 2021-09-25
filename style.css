@@ -8,6 +8,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,3 +94,39 @@ header, .navbar {
   margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Desenvolvedores */
+.card{
+  border-radius: 10%;
+  border-width: 0;
+  background: black;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+.card-body, .card-title, .card-text{
+    text-align: center;
+    color: white;
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-img-top{
+  border-radius: 50%;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 20px 30px 30px 20px;
+}
+
+.card:hover{
+  background: rgba(226, 213, 38, 0.904);
+  filter: grayscale(0);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  cursor: pointer;
+  
+}
+
+.card-body:hover{
+  color: black;
+}
