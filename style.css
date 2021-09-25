@@ -63,6 +63,19 @@ header, .navbar {
   border-bottom: 3px solid #FFF;
 }
 
+.navbar-text {
+  color:#FFF;
+}
+
+#sigla {
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+#titulo-comp {
+  font-size: smaller;
+}
+
 /* Página de login */
 .form-group {
   margin-top: 5px;
@@ -93,4 +106,36 @@ header, .navbar {
   width: 100%;
   margin-top: 5px;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+/*Serviços*/
+
+#card-servicos1 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+#card-servicos2 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+#card-servicos3 {
+  position:relative;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+/*.card-header{
+  position:relative;
+  margin-top:500px;
+}*/
+
+#nova-atv {
+  position:fixed;
+  margin-left: 100px;
+  margin-right:100px;
+}
