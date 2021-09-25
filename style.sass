@@ -5,13 +5,12 @@ $cor_de_fundo_secundaria: #800080
 
 html,body
     height: 100%
+    width: 100%
 
 body
     display: flex
     align:
         items: center
-    background:
-        color: $cor_de_fundo_primaria
 
 .row
   margin: 0
@@ -88,3 +87,60 @@ header, .navbar
     width: 100%
     margin:
         top: 5px
+
+/* Slider */
+
+.container-fluid 
+    padding: 0
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item
+    height: 90vh
+
+#mainSlider .carousel-caption
+    top: 30%
+
+#mainSlider .carousel-caption h2
+    font-size: 50px
+    margin:
+        bottom: 30px
+
+#mainSlider .carousel-caption p 
+    font:
+        size: 22px
+        weight: 300
+    margin:
+        bottom: 100px
+    color: $cor_da_fonte
+
+.main-btn 
+    background:
+        color: #2a48f3
+    color: $cor_da_fonte
+    text:
+        transform: uppercase
+    width: 200px
+    height: 60px
+    padding: 10px 20px
+    border:
+        radius: 30px
+    border: 3px solid transparent
+    transition: .5s
+
+.main-btn:hover 
+    text:
+        decoration: none
+    color: $cor_da_fonte
+    background:
+        color: transparent
+    border:
+        color: #5a3ed5
+
+.carousel-caption.d-md-block 
+    h2
+        text-shadow: #000 2px 2px
+    p
+        text-shadow: #000 0.5px 0.5px
+
+.container-fluid, #about-area
+    position: relative
+    top: 400px

@@ -2,6 +2,7 @@
 /* Gerais */
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -11,7 +12,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000080;
 }
 
 .row {
@@ -95,7 +95,6 @@ header, .navbar {
 }
 
 /* Slider */
-
 .container-fluid {
   padding: 0;
 }
@@ -129,6 +128,7 @@ header, .navbar {
   padding: 10px 20px;
   border-radius: 30px;
   border: 3px solid transparent;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -139,12 +139,16 @@ header, .navbar {
   border-color: #5a3ed5;
 }
 
-
-.carousel-caption.d-md-block h2{
-  text-shadow: #000 2px 2px;  
+.carousel-caption.d-md-block h2 {
+  text-shadow: #000 2px 2px;
 }
 
-.carousel-caption.d-md-block p{
-  text-shadow: #000 0.5px 0.5px;  
+.carousel-caption.d-md-block p {
+  text-shadow: #000 0.5px 0.5px;
+}
+
+.container-fluid, #about-area {
+  position: relative;
+  top: 400px;
 }
 /*# sourceMappingURL=style.css.map */
