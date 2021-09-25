@@ -159,12 +159,40 @@ header, .navbar {
   font-size: 50px;
 }
 
-
-
 #amanda,#ezequiel,#jairon,#sofia{
   padding: 50px; 
   background-color: rebeccapurple;
   margin-top: 200px;
 }
 
+.bi {  
+  width: 25px;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%; 
+}
+
+.bi-facebook:hover {
+  color: #2b6aff;
+}
+
+.bi-discord:hover {
+  color: #9077ff;
+}
+
+.bi-instagram:hover {
+  color: #d414ab;
+}
+
+.bi-github:hover {
+  color: #000000;
+}
+
+.bi-envelope-fill:hover {
+  color: #dd4b39;
+}
 
