@@ -132,18 +132,20 @@ header, .navbar {
   color: black;
 }
 
-.container{
+.container, .container-fluid{
   position:relative;
   top: 50px;
   width:100%;
   height:75%;
 }
 
-.container h1{
+.container h1, .container-fluid h1{
   padding-bottom: 25px;
 }
 
-.container h1, .container p{
+
+
+.container h1, .container p, .container-fluid h1, .container-fluid p{
   color: white;
 }
 
@@ -157,13 +159,12 @@ header, .navbar {
   font-size: 50px;
 }
 
+
+
 #amanda,#ezequiel,#jairon,#sofia{
   padding: 50px; 
-  background-color: rgba(97, 4, 134, 0.89);
+  background-color: rebeccapurple;
   margin-top: 200px;
 }
 
-#sofia{
-  margin-bottom: 200px;
-}
 
