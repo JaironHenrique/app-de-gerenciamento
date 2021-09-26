@@ -324,33 +324,13 @@ header, .navbar {
 
 #card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
   position:relative;
-  margin-top: -600px;
+  margin-top: 30px;
   margin-bottom: 30px;
   color:#444;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-/*#card-servicos1 {
-  position:relative;
-  margin-top: -100px;
-  margin-bottom: 50px;
-  top: 400px;
-}*/
-
-/*#card-servicos2 {
-  position:relative;
-  margin-top: -100px;
-  margin-bottom: 50px;
-  top: 400px;
-}*/
-
-/*#card-servicos3 {
-  position:relative;
-  margin-top: -150px;
-  margin-bottom: 50px;
-  top: 400px;
-}*/
 
 /*.card-header{
   position:relative;
@@ -361,7 +341,7 @@ header, .navbar {
   position:fixed;
   margin-left: 100px;
   margin-right:100px;
-    top: 200px;
+  top: 100px;
 }
 
 #ampulheta {
