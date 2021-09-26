@@ -1,16 +1,17 @@
 /* Gerais */
 $cor_da_fonte: #FFF
-$cor_de_fundo_primaria: #000080
+$cor_de_fundo_primaria: #7070f3
 $cor_de_fundo_secundaria: #800080
 
 html,body
     height: 100%
-    width: 100%
 
 body
     display: flex
     align:
         items: center
+    background:
+        color: $cor_de_fundo_primaria
 
 .row
   margin: 0
@@ -149,7 +150,7 @@ header, .navbar
     position: relative
     top: 400px
     
-/* Copy-area */
+/* Footer */
 
 #contact-area, #copy-area
     position: relative
@@ -240,3 +241,77 @@ footer
         a:hover
             text-decoration: none
             color: #3ec1d5
+
+/* Descrição e Apelo*/
+
+#about-area 
+  background-color: #F9F9F9
+
+#apelo-container 
+  background-color: #3508ff7e
+
+.main-title 
+  color: #444
+  margin: 0 0 65px 0
+  font-size: 40px
+  text-align: center
+
+.main-title::after 
+  content: ""
+  border-top: 2px solid #333
+  width: 15%
+  position: absolute
+  top: 60px
+  left: 42.5%
+
+.about-title 
+  font-size: 17px
+  color: #444
+  text-transform: uppercase
+  font-weight: bold
+
+#about-list 
+  list-style: none
+  padding-left: 0
+
+#about-list li 
+  line-height: 30px
+
+#about-list i 
+  color: yellow
+  margin-right: 15px
+
+#about-area .container
+    padding-bottom: 0 
+
+/* Página de login */
+
+@mixin forma_login()
+    background:
+        color: $cor_de_fundo_secundaria
+    border: 20px solid $cor_de_fundo_secundaria
+        radius: 20px
+
+.form-group
+    margin:
+        top: 5px
+        bottom: 5px
+    
+
+.formlogin 
+    @include forma_login()
+    
+
+.form-inline    
+    @include forma_login()
+
+.text-center
+    color: $cor_da_fonte
+
+.btn-block
+    width: 49%
+
+.btn-block_conta 
+    width: 100%
+    margin:
+        top: 5px
