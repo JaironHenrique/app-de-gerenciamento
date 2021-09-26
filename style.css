@@ -12,6 +12,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,6 +105,18 @@ header, .navbar {
 
 .body-login {
   background-color: #7070f3;
+=======
+.navbar-text {
+  color:#FFF;
+}
+
+#sigla {
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+#titulo-comp {
+  font-size: smaller;
 }
 
 /* Slider */
@@ -287,6 +300,8 @@ footer {
 #copy-area-login .container a:hover {
   text-decoration: none;
   color: #F9F9F9;
+  top: 100px;
+
 }
 
 /* Descrição e Apelo*/
@@ -339,11 +354,39 @@ footer {
   padding-bottom: 0;
 }
 
+
 /* Serviços */
 #nova-atv {
   position: absolute;
   -ms-flex-line-pack: center;
       align-content: center;
+=======
+/* Página de login */
+#container-login{
+  position: relative;
+  top: 200px;
+}
+
+.form-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.formlogin {
+  background-color: #800080;
+  border: 20px solid #800080;
+  border-radius: 20px;
+}
+
+.form-inline {
+  background-color: #800080;
+  border: 20px solid #800080;
+  border-radius: 20px;
+}
+
+.text-center {
+  color: #FFF;
+
 }
 
 .container-fluid-serv {
@@ -357,3 +400,151 @@ footer {
   padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Desenvolvedores */
+
+#card-desenvolvedores{
+  border-radius: 10%;
+  border-width: 0;
+  background: black;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+#card-corpo, #card-titulo, #card-palavras{
+  text-align: center;
+  color: rgb(250, 214, 9);
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-img-top{
+  border-radius: 50%;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 20px 30px 30px 20px;
+}
+
+#card-desenvolvedores:hover{
+  background: rgb(0, 119, 255);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  cursor: pointer;
+  
+}
+
+#card-container, #amanda,#ezequiel,#jairon,#sofia{
+  position:relative;
+  top: 50px;
+  width:100%;
+  height:75%;
+}
+
+#card-container h1, #amanda h1,#ezequiel h1,#jairon h1,#sofia h1{
+  padding-bottom: 25px;
+}
+
+#amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p{
+  color: white;
+}
+
+#team-area{
+  position:relative;
+  margin-bottom: 200px;
+}
+
+#team-heading,#team-area{
+  margin-bottom:50px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+
+#amanda,#ezequiel,#jairon,#sofia{
+  padding: 50px; 
+  padding-bottom: 70px;
+  background-color: rebeccapurple;
+  margin-top: 200px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.295);
+}
+
+.bi {  
+  width: 25px;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%; 
+}
+
+.bi-facebook:hover {
+  color: #2b6aff;
+}
+
+.bi-discord:hover {
+  color: #9077ff;
+}
+
+.bi-instagram:hover {
+  color: #d414ab;
+}
+
+.bi-github:hover {
+  color: #000000;
+}
+
+.bi-envelope-fill:hover {
+  color: #dd4b39;
+}
+
+/*Serviços*/
+
+#card-servicos1 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  top: 400px;
+}
+
+#card-servicos2 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  top: 400px;
+}
+
+#card-servicos3 {
+  position:relative;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  top: 400px;
+}
+
+/*.card-header{
+  position:relative;
+  margin-top:500px;
+}*/
+
+#nova-atv {
+  position:fixed;
+  margin-left: 100px;
+  margin-right:100px;
+    top: 200px;
+}
+
+}
+
+#ampulheta {
+  width: 200px;
+  height: 200px;
+}
+
+/*#cronometro {
+  padding: 5px;
+  color:#FFF;
+  background-color: black;
+  border-radius: 5px;
+}*/
+
