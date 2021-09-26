@@ -8,6 +8,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -131,7 +132,7 @@ header, .navbar {
 
 .container-fluid, #about-area {
   position: relative;
-  top: 400px;
+  top: 100px;
 }
 
 /* Descrição e Apelo*/
@@ -185,6 +186,11 @@ header, .navbar {
 }
 
 /* Página de login */
+#container-login{
+  position: relative;
+  top: 200px;
+}
+
 .form-group {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -216,32 +222,126 @@ header, .navbar {
 }
 /*# sourceMappingURL=style.css.map */
 
-/*Serviços*/
 
-/*#card-servicos1{
-  position:relative;
-  margin-top: -600px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}*/
+/* Desenvolvedores */
 
-#card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
-  position:relative;
-  margin-top: -600px;
-  margin-bottom: 30px;
-  color:#444;
-  margin-left: 50px;
-  margin-right: 50px;
+#card-desenvolvedores{
+  border-radius: 10%;
+  border-width: 0;
+  background: black;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 }
 
-/*#card-servicos3 {
+#card-corpo, #card-titulo, #card-palavras{
+  text-align: center;
+  color: rgb(250, 214, 9);
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-img-top{
+  border-radius: 50%;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 20px 30px 30px 20px;
+}
+
+#card-desenvolvedores:hover{
+  background: rgb(0, 119, 255);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  cursor: pointer;
+  
+}
+
+#card-container, #amanda,#ezequiel,#jairon,#sofia{
   position:relative;
-  margin-top: -600px;
+  top: 50px;
+  width:100%;
+  height:75%;
+}
+
+#card-container h1, #amanda h1,#ezequiel h1,#jairon h1,#sofia h1{
+  padding-bottom: 25px;
+}
+
+#amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p{
+  color: white;
+}
+
+#team-area{
+  position:relative;
+  margin-bottom: 200px;
+}
+
+#team-heading,#team-area{
+  margin-bottom:50px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+
+#amanda,#ezequiel,#jairon,#sofia{
+  padding: 50px; 
+  padding-bottom: 70px;
+  background-color: rebeccapurple;
+  margin-top: 200px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.295);
+}
+
+.bi {  
+  width: 25px;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%; 
+}
+
+.bi-facebook:hover {
+  color: #2b6aff;
+}
+
+.bi-discord:hover {
+  color: #9077ff;
+}
+
+.bi-instagram:hover {
+  color: #d414ab;
+}
+
+.bi-github:hover {
+  color: #000000;
+}
+
+.bi-envelope-fill:hover {
+  color: #dd4b39;
+}
+
+/*Serviços*/
+
+#card-servicos1 {
+  position:relative;
+  margin-top: -100px;
   margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}*/
+  top: 400px;
+}
+
+#card-servicos2 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  top: 400px;
+}
+
+#card-servicos3 {
+  position:relative;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  top: 400px;
+}
 
 /*.card-header{
   position:relative;
@@ -252,6 +352,9 @@ header, .navbar {
   position:fixed;
   margin-left: 100px;
   margin-right:100px;
+    top: 200px;
+}
+
 }
 
 #ampulheta {
@@ -265,3 +368,4 @@ header, .navbar {
   background-color: black;
   border-radius: 5px;
 }*/
+
