@@ -11,7 +11,6 @@ main
 
 body
     display: flex
-    flex-direction: columns
     flex-direction: column
     align:
         items: center
@@ -61,6 +60,16 @@ header, .navbar
 .nav-item.active
     border:
         bottom: 3px solid $cor_da_fonte
+
+.navbar-text
+  color:#FFF
+
+#sigla
+  letter-spacing: 7px
+  text-align: center
+
+#titulo-comp
+  font-size: smaller
 
 /* Slider */
 
@@ -280,7 +289,7 @@ header, .navbar
 
 
 .botao-top
-  position:fixed
+  position: fixed
   width: 50px
   height: 50px
   background-color: rgb(255, 238, 0)
@@ -312,9 +321,9 @@ header, .navbar
   background-color: rebeccapurple
 
 #nova-atv
-  position: relative
+  position: fixed
   margin-left: 100px
-  margin-right:100px
+  margin-right: 100px
   top: 100px
 
 #aba1-ativa, #aba2-ativa, #aba3-ativa
@@ -322,7 +331,7 @@ header, .navbar
   border-color: rgba(63, 32, 95, 0.5)
 
 .card-text, #aba1, #aba2, #aba3, #aba1-ativa, #aba2-ativa, #aba3-ativa
-  color:$cor_da_fonte
+  color: $cor_da_fonte
 
 #ampulheta
   width: 200px
@@ -369,6 +378,7 @@ header, .navbar
     top: 200px
     text:
         align: center
+    z-index: -1
 
 #contact-area-des, #copy-area-des
     position: relative
