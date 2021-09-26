@@ -8,15 +8,12 @@ html,body
 
 body
     display: flex
-<<<<<<< HEAD
-    flex-direction: columns
+    flex-direction: column
     align-items: center
-=======
     align:
         items: center
     background:
         color: $cor_de_fundo_primaria
->>>>>>> origin
 
 .row
   margin: 0
@@ -226,8 +223,8 @@ header, .navbar
 #card-container, #amanda,#ezequiel,#jairon,#sofia
   position:relative
   top: 50px
-  width:100%
-  height:75%
+  width: 100%
+  height: 75%
 
 #card-container h1, #amanda h1,#ezequiel h1,#jairon h1,#sofia h1
   padding-bottom: 25px
@@ -240,7 +237,7 @@ header, .navbar
   margin-bottom: 200px
 
 #team-heading,#team-area
-  margin-bottom:50px
+  margin-bottom: 50px
   font-size: 50px
   color: rgb(0, 0, 0)
 
@@ -276,28 +273,145 @@ header, .navbar
 .bi-envelope-fill:hover 
   color: #dd4b39
 
-/*Serviços*/
+/Serviços/
 
-#card-servicos1
-  position:relative
-  margin-top: -100px
-  margin-bottom: 50px
-  top: 400px
-
-#card-servicos2
-  position:relative
-  margin-top: -100px
-  margin-bottom: 50px
-  top: 400px
-
-#card-servicos3
-  position:relative
-  margin-top: -150px
-  margin-bottom: 50px
-  top: 400px
+#card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4
+  position: relative
+  margin-top: 30px
+  margin-bottom: 30px
+  color:#444
+  margin-left: 50px
+  margin-right: 50px
 
 #nova-atv
   position:fixed
   margin-left: 100px
-  margin-right:100px
+  margin-right: 100px
   top: 200px
+
+/* Footer */
+
+#contact-area-index, #copy-area-index
+    position: relative
+    top: 1180px
+    text:
+        align: center
+
+#contact-area-login, #copy-area-login
+    position: relative
+    top: 0px
+    text:
+        align: center
+
+#contact-area-desenvolvedores, #copy-area-desenvolvedores
+    position: relative
+    top: 3080px
+    text:
+        align: center
+
+.contact-box
+    padding:
+        bottom: 50px
+        top: 50px
+    margin:
+        bottom: 50px
+    border:
+        bottom: 1px solid #444
+    p 
+        font-size: 16px
+    a
+        font-weight: none
+        color: #444
+    a:hover
+        text-decoration: none
+        color: #f9f9f9
+    i
+        color: #444
+        border: 2px solid #444
+            radius: 70%
+        width: 30px
+        height: 55px
+        line-height: 55px
+        margin: 40px
+        font-size: 30px
+        padding: 3px
+
+.contact-title
+    font-weight: bold
+
+#msg-box
+    p
+        font-size: 22px
+
+%forma_rodape
+    margin-bottom: 15px
+    border-radius: 0
+
+#contact-form 
+    input[type="text"]
+        @extend %forma_rodape
+    input[type="email"]
+        @extend %forma_rodape
+    textarea
+        @extend %forma_rodape
+    .main-btn
+        width: 120px
+        height: 50px
+    .main-btn:hover
+            color: #F9F9F9
+
+.espaco-footer
+    padding-bottom: 100px
+
+footer
+    width: 100%
+    height: 100px
+    position: absolute
+    bottom: 0
+    left: 0
+
+.footer-title
+    text:
+        align: center
+    font-size: 40px
+
+/* Copy-area */
+
+#copy-area-index
+    .container
+        padding: 10px 0
+        text-align: center
+        p
+            margin-bottom: 0
+        a
+            font-weight: bold
+            color: #444
+        a:hover
+            text-decoration: none
+            color: #F9F9F9
+
+#copy-area-login
+    .container
+        padding: 10px 0
+        text-align: center
+        p
+            margin-bottom: 0
+        a
+            font-weight: bold
+            color: #444
+        a:hover
+            text-decoration: none
+            color: #F9F9F9
+
+#copy-area-desenvolvedores
+    .container
+        padding: 10px 0
+        text-align: center
+        p
+            margin-bottom: 0
+        a
+            font-weight: bold
+            color: #444
+        a:hover
+            text-decoration: none
+            color: #F9F9F9
