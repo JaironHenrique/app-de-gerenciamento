@@ -355,6 +355,11 @@ header, .navbar {
 }
 
 /* Serviços */
+.grafico{
+  width:200px;
+  height:150px;
+}
+
 #card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
   position: relative;
   margin-top: 30px;
