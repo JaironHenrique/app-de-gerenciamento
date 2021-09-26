@@ -155,4 +155,99 @@ header, .navbar {
   position: relative;
   top: 400px;
 }
+
+/* Copy-area */
+#contact-area, #copy-area {
+  position: relative;
+  top: 1400px;
+  text-align: center;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #3EC1D5;
+}
+
+.contact-box nav p {
+  font-size: 16px;
+}
+
+.contact-box nav a {
+  font-weight: none;
+  color: #444;
+}
+
+.contact-box nav a:hover {
+  text-decoration: none;
+  color: #3ec1d5;
+}
+
+.contact-title {
+  font-weight: bold;
+}
+
+#msg-box p {
+  font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+#contact-form .main-btn {
+  width: 120px;
+  height: 50px;
+}
+
+#contact-form .main-btn:hover {
+  color: #3ec1d5;
+}
+
+#git, #email, #insta {
+  color: #444;
+  border: 1px solid #444;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #3EC1D5;
+}
+
+/* Copy-area */
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+}
+
+#copy-area .container a {
+  font-weight: bold;
+  color: #444;
+}
+
+#copy-area .container a:hover {
+  text-decoration: none;
+  color: #3ec1d5;
+}
 /*# sourceMappingURL=style.css.map */
