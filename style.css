@@ -303,6 +303,11 @@ header, .navbar {
 
 /*Serviços*/
 
+#cont-fluid-servicos{
+  position: relative;
+  top: 400px;
+}
+
 #card-servicos1 {
   position:relative;
   margin-top: -100px;
