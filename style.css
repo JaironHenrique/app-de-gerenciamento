@@ -64,6 +64,19 @@ header, .navbar {
   border-bottom: 3px solid #FFF;
 }
 
+.navbar-text {
+  color:#FFF;
+}
+
+#sigla {
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+#titulo-comp {
+  font-size: smaller;
+}
+
 /* Slider */
 .container-fluid {
   padding: 0;
@@ -209,6 +222,7 @@ header, .navbar {
 }
 /*# sourceMappingURL=style.css.map */
 
+
 /* Desenvolvedores */
 
 #card-desenvolvedores{
@@ -338,5 +352,20 @@ header, .navbar {
   position:fixed;
   margin-left: 100px;
   margin-right:100px;
-  top: 200px;
+    top: 200px;
 }
+
+}
+
+#ampulheta {
+  width: 200px;
+  height: 200px;
+}
+
+/*#cronometro {
+  padding: 5px;
+  color:#FFF;
+  background-color: black;
+  border-radius: 5px;
+}*/
+
