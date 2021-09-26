@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/STARFOCUS - logo.ico">
     <link rel="stylesheet" href="style.css">
 
-    <title>Criar conta | S.T.A.R.F.O.C.U.S.</title>
+    <title>Meu desempenho | S.T.A.R.F.O.C.U.S.</title>
 </head>
 <body>
     <header>
@@ -21,14 +21,14 @@
                     <h3 id="sigla">S.T.A.R.F.O.C.U.S.</h3> 
                     <h6 id="titulo-comp">Sistema de Trabalho, Agenda e Rotina Focada e Organizada Contido em um Único Site</h6>
                 </span>
-                
+
             <button class = "navbar-toggler" type="button" data-toggle = "collapse" data-target = "#navbar-links" aria-controls = "navbar-links" aria-expanded="false" aria-label = "Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
-                  <a class="nav-item nav-link" id="services-menu" href="servicos_atv.html">Serviços</a>
+                  <a class="nav-item nav-link" id="home-menu" href="index.html"><span>Home</span></a>
+                  <a class="nav-item nav-link" id="services-menu" href="#">Serviços</a>
                   <a class="nav-item nav-link" id="team-menu" href="desenvolvedores.htm">Desenvolvedores</a>
                   <a class="nav-item nav-link" id="portfolio-menu" href="login.htm">Login</a>
                 </div>
@@ -36,29 +36,28 @@
             </nav>
         </div>
     </header>
-    <div class = "container">
-        <div class="justify-content-center align-items-center row">
-            <div class="col-4">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nome" class="form-control"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Sobrenome" class="form-control"/>
-                    </div> 
-                    <div class="form-group">
-                        <input type="text" placeholder="Nome de Usuário" class="form-control"/>
-                    </div>    
-                    <div class="input-group">
-                        <input type="text" placeholder="Senha" class="form-control"/>
-                        <input type="text" placeholder="Confirmar" class="form-control"/>
-                    </div>
-                    <div>
-                        <a class="btn btn-success btn-block_conta" href="index.html" role="button">Finalizar</a> 
-                    </div>
-                </form>
+    
+    <div class="container-fluid">
+        <div class="card text-center" id="card-servicos3">
+            <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                <a class="nav-link" href="servicos_atv.html">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="servicos_pomodoro.html">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Desempenho</a>
+                </li>
+            </ul>
             </div>
-        </div> 
+            <div class="card-body">
+            <!--<h5 class="card-title">Título especial</h5>-->
+            <p class="card-text">Desculpe, não há nenhum desempenho para exibir ainda.</p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>

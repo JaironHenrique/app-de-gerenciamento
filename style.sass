@@ -1,14 +1,22 @@
 /* Gerais */
 $cor_da_fonte: #FFF
-$cor_do_fundo: #353D41
+$cor_de_fundo_primaria: #7070f3
+$cor_de_fundo_secundaria: #800080
 
 html,body
     height: 100%
 
 body
     display: flex
+<<<<<<< HEAD
     flex-direction: columns
     align-items: center
+=======
+    align:
+        items: center
+    background:
+        color: $cor_de_fundo_primaria
+>>>>>>> origin
 
 .row
   margin: 0
@@ -18,12 +26,14 @@ body
 
 p, li
     color: #444
-    font-size: 14px
+    font:
+        size: 14px
 
 /* Barra de navegação */
 
 header, .navbar
-    background-color: $cor_do_fundo
+    background:
+        color: $cor_de_fundo_secundaria
   
 #nav-container
     padding:
@@ -52,12 +62,110 @@ header, .navbar
     border:
         bottom: 3px solid $cor_da_fonte
 
+/* Slider */
+
+.container-fluid 
+    padding: 0
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item
+    height: 90vh
+
+#mainSlider .carousel-caption
+    top: 30%
+
+#mainSlider .carousel-caption h2
+    font-size: 50px
+    margin:
+        bottom: 30px
+
+#mainSlider .carousel-caption p 
+    font:
+        size: 22px
+        weight: 300
+    margin:
+        bottom: 100px
+    color: $cor_da_fonte
+
+.main-btn 
+    background:
+        color: #2a48f3
+    color: $cor_da_fonte
+    text:
+        transform: uppercase
+    width: 200px
+    height: 60px
+    padding: 10px 20px
+    border:
+        radius: 30px
+    border: 3px solid transparent
+    transition: .5s
+
+.main-btn:hover 
+    text:
+        decoration: none
+    color: $cor_da_fonte
+    background:
+        color: transparent
+    border:
+        color: #5a3ed5
+
+.carousel-caption.d-md-block 
+    h2
+        text-shadow: #000 2px 2px
+    p
+        text-shadow: #000 0.5px 0.5px
+
+.container-fluid, #about-area
+    position: relative
+    top: 400px
+
+/* Descrição e Apelo*/
+#about-area 
+  background-color: #F9F9F9
+
+#apelo-container 
+  background-color: #3508ff7e
+
+.main-title 
+  color: #444
+  margin: 0 0 65px 0
+  font-size: 40px
+  text-align: center
+
+.main-title::after 
+  content: ""
+  border-top: 2px solid #333
+  width: 15%
+  position: absolute
+  top: 60px
+  left: 42.5%
+
+.about-title 
+  font-size: 17px
+  color: #444
+  text-transform: uppercase
+  font-weight: bold
+
+#about-list 
+  list-style: none
+  padding-left: 0
+
+#about-list li 
+  line-height: 30px
+
+#about-list i 
+  color: yellow
+  margin-right: 15px
+
+#about-area .container
+    padding-bottom: 0 
+
 /* Página de login */
 
 @mixin forma_login()
     background:
-        color: $cor_do_fundo
-    border: 20px solid $cor_do_fundo
+        color: $cor_de_fundo_secundaria
+    border: 20px solid $cor_de_fundo_secundaria
         radius: 20px
 
 .form-group
@@ -79,7 +187,7 @@ header, .navbar
 .btn-block
     width: 49%
 
-.btn-block1 
+.btn-block_conta 
     width: 100%
     margin:
         top: 5px

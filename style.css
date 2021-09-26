@@ -12,6 +12,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #7070f3;
 }
 
 .row {
@@ -29,7 +30,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #353D41;
+  background-color: #800080;
 }
 
 #nav-container {
@@ -63,6 +64,114 @@ header, .navbar {
   border-bottom: 3px solid #FFF;
 }
 
+/* Slider */
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+  height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #FFF;
+}
+
+.main-btn {
+  background-color: #2a48f3;
+  color: #FFF;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+  border-color: #5a3ed5;
+}
+
+.carousel-caption.d-md-block h2 {
+  text-shadow: #000 2px 2px;
+}
+
+.carousel-caption.d-md-block p {
+  text-shadow: #000 0.5px 0.5px;
+}
+
+.container-fluid, #about-area {
+  position: relative;
+  top: 400px;
+}
+
+/* Descrição e Apelo*/
+#about-area {
+  background-color: #F9F9F9;
+}
+
+#apelo-container {
+  background-color: #3508ff7e;
+}
+
+.main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-title::after {
+  content: "";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+#about-list i {
+  color: yellow;
+  margin-right: 15px;
+}
+
+#about-area .container {
+  padding-bottom: 0;
+}
+
 /* Página de login */
 .form-group {
   margin-top: 5px;
@@ -70,14 +179,14 @@ header, .navbar {
 }
 
 .formlogin {
-  background-color: #353D41;
-  border: 20px solid #353D41;
+  background-color: #800080;
+  border: 20px solid #800080;
   border-radius: 20px;
 }
 
 .form-inline {
-  background-color: #353D41;
-  border: 20px solid #353D41;
+  background-color: #800080;
+  border: 20px solid #800080;
   border-radius: 20px;
 }
 
@@ -89,7 +198,7 @@ header, .navbar {
   width: 49%;
 }
 
-.btn-block1 {
+.btn-block_conta {
   width: 100%;
   margin-top: 5px;
 }
@@ -127,20 +236,18 @@ header, .navbar {
   
 }
 
-.container, .container-fluid{
+#card-container, #amanda,#ezequiel,#jairon,#sofia{
   position:relative;
   top: 50px;
   width:100%;
   height:75%;
 }
 
-.container h1, .container-fluid h1{
+#card-container h1, #amanda h1,#ezequiel h1,#jairon h1,#sofia h1{
   padding-bottom: 25px;
 }
 
-
-
-.container h1, .container p, .container-fluid h1, .container-fluid p{
+#card-container h1, #card-container p, #amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p{
   color: white;
 }
 
@@ -149,15 +256,18 @@ header, .navbar {
   margin-bottom: 200px;
 }
 
-.heading,#team-area{
+#team-heading,#team-area{
   margin-bottom:50px;
   font-size: 50px;
+  color: rgb(0, 0, 0);
 }
 
 #amanda,#ezequiel,#jairon,#sofia{
   padding: 50px; 
+  padding-bottom: 70px;
   background-color: rebeccapurple;
   margin-top: 200px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.295);
 }
 
 .bi {  
@@ -191,3 +301,33 @@ header, .navbar {
   color: #dd4b39;
 }
 
+/*Serviços*/
+
+#card-servicos1 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+#card-servicos2 {
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+#card-servicos3 {
+  position:relative;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+/*.card-header{
+  position:relative;
+  margin-top:500px;
+}*/
+
+#nova-atv {
+  position:fixed;
+  margin-left: 100px;
+  margin-right:100px;
+}
