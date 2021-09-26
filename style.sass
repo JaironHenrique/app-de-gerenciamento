@@ -6,6 +6,9 @@ $cor_de_fundo_secundaria: #800080
 html,body
     height: 100%
 
+main
+    width: 100%
+
 body
     display: flex
     flex-direction: columns
@@ -96,6 +99,7 @@ header, .navbar
         radius: 30px
     border: 3px solid transparent
     transition: .5s
+    text-decoration: none
 
 .main-btn:hover 
     text:
@@ -105,6 +109,7 @@ header, .navbar
         color: transparent
     border:
         color: #5a3ed5
+    text-decoration: none
 
 .carousel-caption.d-md-block 
     h2
@@ -114,7 +119,7 @@ header, .navbar
 
 .container-fluid, #about-area
     position: relative
-    top: 100px
+    top: 80px
 
 /* Descrição e Apelo*/
 #about-area 
@@ -221,7 +226,7 @@ header, .navbar
   cursor: pointer
 
 #card-container, #amanda,#ezequiel,#jairon,#sofia
-  position:relative
+  position: relative
   top: 50px
   width: 100%
   height: 75%
@@ -234,8 +239,10 @@ header, .navbar
   color: white
 
 #team-area
-  position:relative
-  margin-bottom: 200px
+    position: relative
+    margin:
+        bottom: 200px
+        top: 30px
 
 #team-heading,#team-area
   margin-bottom: 50px
@@ -271,28 +278,29 @@ header, .navbar
 #email:hover 
   color: #dd4b39
 
+
 .botao-top
   position:fixed
   width: 50px
   height: 50px
   background-color: rgb(255, 238, 0)
   bottom: 40px
-  right:40px
+  right: 40px
   text-align: center
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.411)
   cursor: pointer
   border-radius: 50%
 
- .bi-arrow-up
+.bi-arrow-up
   align-items: center
   line-height: 50px
   color: #000
-  font-size:30px
+  font-size: 30px
  
- .botao-top:hover
+.botao-top:hover
   transform: scale(1.05)
 
-/*Serviços*/
+/* Serviços */
 
 #card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4
   position: relative
@@ -301,12 +309,15 @@ header, .navbar
   color:#444
   margin-left: 50px
   margin-right: 50px
+  padding-bottom: 50px
 
 #nova-atv
-  position:fixed
+  position: relative
   margin-left: 100px
   margin-right: 100px
-  top: 200px
+  top: 0px
+  width: 100%
+  height: 100%
 
 /* Footer */
 
@@ -316,7 +327,7 @@ header, .navbar
     text:
         align: center
 
-#contact-area-login, #copy-area-login
+#contact-area-login, #copy-area-login, #contact-area-atv, #copy-area-atv
     position: relative
     top: 0px
     text:
@@ -324,7 +335,25 @@ header, .navbar
 
 #contact-area-desenvolvedores, #copy-area-desenvolvedores
     position: relative
-    top: 3080px
+    top: 3400px
+    text:
+        align: center
+
+#contact-area-pom, #copy-area-pom
+    position: relative
+    top: 500px
+    text:
+        align: center
+
+#contact-area-criar_atv, #copy-area-criar_atv
+    position: relative
+    top: 200px
+    text:
+        align: center
+
+#contact-area-des, #copy-area-des
+    position: relative
+    top: 3200px
     text:
         align: center
 
@@ -396,33 +425,7 @@ footer
 
 /* Copy-area */
 
-#copy-area-index
-    .container
-        padding: 10px 0
-        text-align: center
-        p
-            margin-bottom: 0
-        a
-            font-weight: bold
-            color: #444
-        a:hover
-            text-decoration: none
-            color: #F9F9F9
-
-#copy-area-login
-    .container
-        padding: 10px 0
-        text-align: center
-        p
-            margin-bottom: 0
-        a
-            font-weight: bold
-            color: #444
-        a:hover
-            text-decoration: none
-            color: #F9F9F9
-
-#copy-area-desenvolvedores
+#copy-area-index, #copy-area-login, #copy-area-desenvolvedores, #copy-area-atv, #copy-area-pom, #copy-area-criar_atv, #copy-area-des
     .container
         padding: 10px 0
         text-align: center

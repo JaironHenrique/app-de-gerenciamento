@@ -4,18 +4,22 @@ html, body {
   height: 100%;
 }
 
+main {
+  width: 100%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
+  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  align-items: center;
   background-color: #7070f3;
 }
 
@@ -104,6 +108,7 @@ header, .navbar {
   border: 3px solid transparent;
   -webkit-transition: .5s;
   transition: .5s;
+  text-decoration: none;
 }
 
 .main-btn:hover {
@@ -111,6 +116,7 @@ header, .navbar {
   color: #FFF;
   background-color: transparent;
   border-color: #5a3ed5;
+  text-decoration: none;
 }
 
 .carousel-caption.d-md-block h2 {
@@ -123,7 +129,7 @@ header, .navbar {
 
 .container-fluid, #about-area {
   position: relative;
-  top: 100px;
+  top: 80px;
 }
 
 /* Descrição e Apelo*/
@@ -221,7 +227,7 @@ header, .navbar {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-#card-corpo, #card-titulo, #card-texto {
+#card-corpo, #card-titulo, #card-palavras {
   text-align: center;
   color: #fad609;
 }
@@ -246,6 +252,7 @@ header, .navbar {
 }
 
 #card-container, #amanda, #ezequiel, #jairon, #sofia {
+  position: relative;
   top: 50px;
   width: 100%;
   height: 75%;
@@ -260,7 +267,9 @@ header, .navbar {
 }
 
 #team-area {
+  position: relative;
   margin-bottom: 200px;
+  margin-top: 30px;
 }
 
 #team-heading, #team-area {
@@ -278,9 +287,7 @@ header, .navbar {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.295);
 }
 
-#facebook, #instagram, #email, #github {  
-
-.bi {
+#facebook, #instagram, #email, #github {
   width: 25px;
   padding: 20px;
   font-size: 40px;
@@ -307,32 +314,34 @@ header, .navbar {
   color: #dd4b39;
 }
 
-.botao-top{
-  position:fixed;
+.botao-top {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 238, 0);
+  background-color: #ffee00;
   bottom: 40px;
-  right:40px;
+  right: 40px;
   text-align: center;
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.411);
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.411);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.411);
   cursor: pointer;
   border-radius: 50%;
- }
+}
 
- .bi-arrow-up{
-  align-items: center;
+.bi-arrow-up {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 50px;
   color: #000;
-  font-size:30px;
- }
-  
- .botao-top:hover{
-  transform: scale(1.05);
- }
- 
-/*Serviços*/
+  font-size: 30px;
+}
 
+.botao-top:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* Serviços */
 #card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
   position: relative;
   margin-top: 30px;
@@ -340,16 +349,26 @@ header, .navbar {
   color: #444;
   margin-left: 50px;
   margin-right: 50px;
+  padding-bottom: 50px;
+}
+
+#nova-atv {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */
 #contact-area-index, #copy-area-index {
   position: relative;
-  top: 1180px;
+  top: 1100px;
   text-align: center;
 }
 
-#contact-area-login, #copy-area-login {
+#contact-area-login, #copy-area-login, #contact-area-atv, #copy-area-atv {
   position: relative;
   top: 0px;
   text-align: center;
@@ -357,7 +376,25 @@ header, .navbar {
 
 #contact-area-desenvolvedores, #copy-area-desenvolvedores {
   position: relative;
-  top: 3080px;
+  top: 3400px;
+  text-align: center;
+}
+
+#contact-area-pom, #copy-area-pom {
+  position: relative;
+  top: 500px;
+  text-align: center;
+}
+
+#contact-area-criar_atv, #copy-area-criar_atv {
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+
+#contact-area-des, #copy-area-des {
+  position: relative;
+  top: 3280px;
   text-align: center;
 }
 
@@ -371,12 +408,6 @@ header, .navbar {
 .contact-box p {
   font-size: 16px;
 }
-
-#nova-atv {
-  position:fixed;
-  margin-left: 100px;
-  margin-right:100px;
-  top: 100px;
 
 .contact-box a {
   font-weight: none;
@@ -440,59 +471,21 @@ footer {
 }
 
 /* Copy-area */
-#copy-area-index .container {
+#copy-area-index .container, #copy-area-login .container, #copy-area-desenvolvedores .container, #copy-area-atv .container, #copy-area-pom .container, #copy-area-criar_atv .container, #copy-area-des .container {
   padding: 10px 0;
   text-align: center;
 }
 
-#copy-area-index .container p {
+#copy-area-index .container p, #copy-area-login .container p, #copy-area-desenvolvedores .container p, #copy-area-atv .container p, #copy-area-pom .container p, #copy-area-criar_atv .container p, #copy-area-des .container p {
   margin-bottom: 0;
 }
 
-#copy-area-index .container a {
+#copy-area-index .container a, #copy-area-login .container a, #copy-area-desenvolvedores .container a, #copy-area-atv .container a, #copy-area-pom .container a, #copy-area-criar_atv .container a, #copy-area-des .container a {
   font-weight: bold;
   color: #444;
 }
 
-#copy-area-index .container a:hover {
-  text-decoration: none;
-  color: #F9F9F9;
-}
-
-#copy-area-login .container {
-  padding: 10px 0;
-  text-align: center;
-}
-
-#copy-area-login .container p {
-  margin-bottom: 0;
-}
-
-#copy-area-login .container a {
-  font-weight: bold;
-  color: #444;
-}
-
-#copy-area-login .container a:hover {
-  text-decoration: none;
-  color: #F9F9F9;
-}
-
-#copy-area-desenvolvedores .container {
-  padding: 10px 0;
-  text-align: center;
-}
-
-#copy-area-desenvolvedores .container p {
-  margin-bottom: 0;
-}
-
-#copy-area-desenvolvedores .container a {
-  font-weight: bold;
-  color: #444;
-}
-
-#copy-area-desenvolvedores .container a:hover {
+#copy-area-index .container a:hover, #copy-area-login .container a:hover, #copy-area-desenvolvedores .container a:hover, #copy-area-atv .container a:hover, #copy-area-pom .container a:hover, #copy-area-criar_atv .container a:hover, #copy-area-des .container a:hover {
   text-decoration: none;
   color: #F9F9F9;
 }
