@@ -173,6 +173,11 @@ header, .navbar {
 }
 
 /* Página de login */
+#container-login{
+  position: relative;
+  top: 200px;
+}
+
 .form-group {
   margin-top: 5px;
   margin-bottom: 5px;
