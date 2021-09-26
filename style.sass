@@ -6,6 +6,9 @@ $cor_de_fundo_secundaria: #800080
 html,body
     height: 100%
 
+main
+    width: 100%
+
 body
     display: flex
     align:
@@ -57,7 +60,7 @@ header, .navbar
     border:
         bottom: 3px solid $cor_da_fonte
 
-/* Página de login */
+/* Páginas de login */
 
 @mixin forma_login()
     background:
@@ -148,13 +151,13 @@ header, .navbar
 
 .container-fluid, #about-area
     position: relative
-    top: 400px
+    top: 500px
     
 /* Footer */
 
 #contact-area, #copy-area
     position: relative
-    top: 1400px
+    top: 1000px
     text:
         align: center
 
@@ -165,16 +168,24 @@ header, .navbar
     margin:
         bottom: 50px
     border:
-        bottom: 1px solid #3EC1D5
-    nav
-        p 
-            font-size: 16px
-        a
-            font-weight: none
-            color: #444
-        a:hover
-            text-decoration: none
-            color: #3ec1d5
+        bottom: 1px solid #444
+    p 
+        font-size: 16px
+    a
+        font-weight: none
+        color: #444
+    a:hover
+        text-decoration: none
+        color: #3ec1d5
+    i
+        color: #444
+        border: 2px solid #444
+            radius: 70%
+        width: 30px
+        height: 55px
+        line-height: 55px
+        margin: 40px
+        font-size: 50px
 
 .contact-title
     font-weight: bold
@@ -198,34 +209,26 @@ header, .navbar
         width: 120px
         height: 50px
     .main-btn:hover
-            color: #3ec1d5
+            color: #3ec1d5 
 
-#git, #email, #insta
-    color: #444
-    border: 1px solid #444
-        radius: 50%
-    width: 55px
-    height: 55px
-    line-height: 55px
-    margin-bottom: 20px
-
+.espaco-footer
+    padding-bottom: 100px
 
 footer
+    width: 100%
+    height: 100px
     position: absolute
     bottom: 0
-    width: 100%
+    left: 0
 
 .footer-title
     text:
         align: center
     font-size: 40px
     padding:
-        bottom: 50px
         top: 50px
     margin:
         top: 50px
-    border:
-        top: 1px solid #3EC1D5
 
 /* Copy-area */
 
@@ -283,35 +286,3 @@ footer
 
 #about-area .container
     padding-bottom: 0 
-
-/* Página de login */
-
-@mixin forma_login()
-    background:
-        color: $cor_de_fundo_secundaria
-    border: 20px solid $cor_de_fundo_secundaria
-        radius: 20px
-
-.form-group
-    margin:
-        top: 5px
-        bottom: 5px
-    
-
-.formlogin 
-    @include forma_login()
-    
-
-.form-inline    
-    @include forma_login()
-
-.text-center
-    color: $cor_da_fonte
-
-.btn-block
-    width: 49%
-
-.btn-block_conta 
-    width: 100%
-    margin:
-        top: 5px
