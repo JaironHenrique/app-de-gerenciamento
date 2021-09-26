@@ -6,16 +6,17 @@ $cor_de_fundo_secundaria: #800080
 html,body
     height: 100%
 
-main
-    width: 100%
-
 body
     display: flex
+<<<<<<< HEAD
     flex-direction: columns
+    align-items: center
+=======
     align:
         items: center
     background:
         color: $cor_de_fundo_primaria
+>>>>>>> origin
 
 .row
   margin: 0
@@ -53,8 +54,6 @@ header, .navbar
 #navbar-links 
     a
         color: $cor_da_fonte
-    a:hover
-        text-decoration: none
   
 .navbar-expand-lg .navbar-nav .nav-link
     padding: 1rem .8rem
@@ -63,45 +62,9 @@ header, .navbar
     border:
         bottom: 3px solid $cor_da_fonte
 
-/* Páginas de login */
-
-@mixin forma_login()
-    background:
-        color: $cor_de_fundo_secundaria
-    border: 20px solid $cor_de_fundo_secundaria
-        radius: 20px
-
-.form-group
-    margin:
-        top: 5px
-        bottom: 5px
-    
-
-.formlogin 
-    @include forma_login()
-    
-
-.form-inline    
-    @include forma_login()
-
-.text-center
-    color: $cor_da_fonte
-
-.btn-block
-    width: 49%
-
-.btn-block_conta 
-    width: 100%
-    margin:
-        top: 5px
-
-.body-login
-    background:
-        color: $cor_de_fundo_primaria
-
 /* Slider */
 
-.container-fluid
+.container-fluid 
     padding: 0
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item
@@ -136,7 +99,6 @@ header, .navbar
         radius: 30px
     border: 3px solid transparent
     transition: .5s
-    text-decoration: none
 
 .main-btn:hover 
     text:
@@ -155,119 +117,9 @@ header, .navbar
 
 .container-fluid, #about-area
     position: relative
-    top: 590px
-
-/* Footer */
-
-#contact-area-index, #copy-area-index
-    position: relative
-    top: 1090px
-    text:
-        align: center
-
-#contact-area-login, #copy-area-login
-    position: relative
-    top: 0px
-    text:
-        align: center
-
-.contact-box
-    padding:
-        bottom: 50px
-        top: 50px
-    margin:
-        bottom: 50px
-    border:
-        bottom: 1px solid #444
-    p 
-        font-size: 16px
-    a
-        font-weight: none
-        color: #444
-    a:hover
-        text-decoration: none
-        color: #f9f9f9
-    i
-        color: #444
-        border: 2px solid #444
-            radius: 70%
-        width: 30px
-        height: 55px
-        line-height: 55px
-        margin: 40px
-        font-size: 30px
-        padding: 3px
-
-.contact-title
-    font-weight: bold
-
-#msg-box
-    p
-        font-size: 22px
-
-%forma_rodape
-    margin-bottom: 15px
-    border-radius: 0
-
-#contact-form 
-    input[type="text"]
-        @extend %forma_rodape
-    input[type="email"]
-        @extend %forma_rodape
-    textarea
-        @extend %forma_rodape
-    .main-btn
-        width: 120px
-        height: 50px
-    .main-btn:hover
-            color: #F9F9F9
-
-.espaco-footer
-    padding-bottom: 100px
-
-footer
-    width: 100%
-    height: 100px
-    position: absolute
-    bottom: 0
-    left: 0
-
-.footer-title
-    text:
-        align: center
-    font-size: 40px
-
-/* Copy-area */
-
-#copy-area-index
-    .container
-        padding: 10px 0
-        text-align: center
-        p
-            margin-bottom: 0
-        a
-            font-weight: bold
-            color: #444
-        a:hover
-            text-decoration: none
-            color: #F9F9F9
-
-#copy-area-login
-    .container
-        padding: 10px 0
-        text-align: center
-        p
-            margin-bottom: 0
-        a
-            font-weight: bold
-            color: #444
-        a:hover
-            text-decoration: none
-            color: #F9F9F9
     top: 100px
 
 /* Descrição e Apelo*/
-
 #about-area 
   background-color: #F9F9F9
 
@@ -308,21 +160,14 @@ footer
 #about-area .container
     padding-bottom: 0 
 
-/* Serviços */
+/* Página de login */
 
-#nova-atv
-    position: absolute
-    align-content: center
+@mixin forma_login()
+    background:
+        color: $cor_de_fundo_secundaria
+    border: 20px solid $cor_de_fundo_secundaria
+        radius: 20px
 
-.container-fluid-serv
-    position: relative
-    top: 100px
-    width: 100%
-    height: 100%
-
-.container-fluid-serv
-    padding: 0
-=======
 #container-login
   position: relative
   top: 200px
@@ -456,4 +301,3 @@ footer
   margin-left: 100px
   margin-right:100px
   top: 200px
-
