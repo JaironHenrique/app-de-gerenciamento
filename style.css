@@ -198,7 +198,7 @@ header, .navbar {
 /* Página de login */
 #container-login {
   position: relative;
-  top: 200px;
+  top: 150px;
 }
 
 .form-group {
@@ -328,6 +328,7 @@ header, .navbar {
 }
 
 .botao-top {
+  position:fixed;
   width: 50px;
   height: 50px;
   background-color: #ffee00;
@@ -380,12 +381,10 @@ header, .navbar {
 }
 
 #nova-atv {
-  position: relative;
+  position: fixed;
   margin-left: 100px;
   margin-right: 100px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
+  top: 100px;
 }
 
 #cronometro {
@@ -393,6 +392,11 @@ header, .navbar {
   color:#444;
   background-color: #FFF;
   border-radius: 5px;
+}
+
+#ampulheta{
+  height: 200px;
+  width: 200px;
 }
 
 /* Footer */
@@ -404,7 +408,7 @@ header, .navbar {
 
 #contact-area-login, #copy-area-login, #contact-area-atv, #copy-area-atv {
   position: relative;
-  top: 0px;
+  top: 100px;
   text-align: center;
 }
 
@@ -416,7 +420,7 @@ header, .navbar {
 
 #contact-area-pom, #copy-area-pom {
   position: relative;
-  top: 500px;
+  top: 100px;
   text-align: center;
 }
 
@@ -424,6 +428,7 @@ header, .navbar {
   position: relative;
   top: 200px;
   text-align: center;
+  z-index: -1;
 }
 
 #contact-area-des, #copy-area-des {
