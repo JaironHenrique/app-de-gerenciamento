@@ -322,25 +322,13 @@ header, .navbar {
 
 /*Serviços*/
 
-#card-servicos1 {
+#card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
   position:relative;
-  margin-top: -100px;
-  margin-bottom: 50px;
-  top: 400px;
-}
-
-#card-servicos2 {
-  position:relative;
-  margin-top: -100px;
-  margin-bottom: 50px;
-  top: 400px;
-}
-
-#card-servicos3 {
-  position:relative;
-  margin-top: -150px;
-  margin-bottom: 50px;
-  top: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#444;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /*.card-header{
@@ -353,8 +341,6 @@ header, .navbar {
   margin-left: 100px;
   margin-right:100px;
     top: 200px;
-}
-
 }
 
 #ampulheta {
