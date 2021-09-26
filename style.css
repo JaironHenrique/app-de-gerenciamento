@@ -326,16 +326,25 @@ header, .navbar {
   position:relative;
   margin-top: 30px;
   margin-bottom: 30px;
-  color:#444;
+  color:#FFF;
   margin-left: 50px;
   margin-right: 50px;
+  background-color: rebeccapurple;
 }
 
+#aba1-ativa, #aba2-ativa, #aba3-ativa{
+  background-color: rgb(90, 45, 134);
+  color:#FFF;
+  border-color:rgba(63, 32, 95, 0.5)
+}
 
-/*.card-header{
-  position:relative;
-  margin-top:500px;
-}*/
+#aba1, #aba2, #aba3{
+  color:#FFF;
+}
+
+.card-text{
+  color:#FFF;
+}
 
 #nova-atv {
   position:fixed;
@@ -349,10 +358,10 @@ header, .navbar {
   height: 200px;
 }
 
-/*#cronometro {
+#cronometro {
   padding: 5px;
-  color:#FFF;
-  background-color: black;
+  color:#444;
+  background-color: #FFF;
   border-radius: 5px;
-}*/
+}
 
