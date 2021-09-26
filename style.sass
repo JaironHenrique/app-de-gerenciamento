@@ -11,8 +11,8 @@ main
 
 body
     display: flex
+    flex-direction: columns
     flex-direction: column
-    align-items: center
     align:
         items: center
     background:
@@ -207,7 +207,7 @@ header, .navbar
   background: black
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05)
 
-#card-corpo, #card-titulo, #card-texto
+#card-corpo, #card-titulo, #card-palavras
   text-align: center
   color: rgb(250, 214, 9)
 
@@ -234,6 +234,7 @@ header, .navbar
 #card-container h1, #amanda h1,#ezequiel h1,#jairon h1,#sofia h1
   padding-bottom: 25px
 
+
 #amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p
   color: white
 
@@ -255,7 +256,7 @@ header, .navbar
   margin-top: 200px
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.295)
 
-.bi
+#facebook, #instagram, #email, #github 
   width: 25px
   padding: 20px
   font-size: 40px
@@ -265,20 +266,39 @@ header, .navbar
   color: white
   border-radius: 50%
 
-.bi-facebook:hover
+#facebook:hover 
   color: #2b6aff
 
-.bi-discord:hover
-  color: #9077ff
-
-.bi-instagram:hover
+#instagram:hover 
   color: #d414ab
 
-.bi-github:hover 
+#github:hover 
   color: #000000
 
-.bi-envelope-fill:hover 
+#email:hover 
   color: #dd4b39
+
+
+.botao-top
+  position:fixed
+  width: 50px
+  height: 50px
+  background-color: rgb(255, 238, 0)
+  bottom: 40px
+  right: 40px
+  text-align: center
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0, 0, 0, 0.411)
+  cursor: pointer
+  border-radius: 50%
+
+.bi-arrow-up
+  align-items: center
+  line-height: 50px
+  color: #000
+  font-size: 30px
+ 
+.botao-top:hover
+  transform: scale(1.05)
 
 /* Serviços */
 
