@@ -119,7 +119,7 @@ header, .navbar {
 
 .container-fluid, #about-area {
   position: relative;
-  top: 400px;
+  top: 100px;
 }
 
 /* Descrição e Apelo*/
@@ -213,9 +213,9 @@ header, .navbar {
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 }
 
-#card-corpo, #card-titulo, #card-texto{
+#card-corpo, #card-titulo, #card-palavras{
   text-align: center;
-  color: white;
+  color: rgb(250, 214, 9);
 }
 
 .card-link{
@@ -247,7 +247,7 @@ header, .navbar {
   padding-bottom: 25px;
 }
 
-#card-container h1, #card-container p, #amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p{
+#amanda h1, #ezequiel h1, #jairon h1, #sofia h1, #amanda p, #ezequiel p, #jairon p, #sofia p{
   color: white;
 }
 
