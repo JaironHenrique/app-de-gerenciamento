@@ -59,6 +59,10 @@ header, .navbar {
   color: #FFF;
 }
 
+#navbar-links a:hover {
+  text-decoration: none;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 1rem .8rem;
 }
@@ -138,6 +142,7 @@ header, .navbar {
   border: 3px solid transparent;
   -webkit-transition: .5s;
   transition: .5s;
+  text-decoration: none;
 }
 
 .main-btn:hover {
@@ -157,13 +162,19 @@ header, .navbar {
 
 .container-fluid, #about-area {
   position: relative;
-  top: 500px;
+  top: 590px;
 }
 
 /* Footer */
-#contact-area, #copy-area {
+#contact-area-index, #copy-area-index {
   position: relative;
-  top: 1000px;
+  top: 1090px;
+  text-align: center;
+}
+
+#contact-area-login, #copy-area-login {
+  position: relative;
+  top: 0px;
   text-align: center;
 }
 
@@ -185,7 +196,7 @@ header, .navbar {
 
 .contact-box a:hover {
   text-decoration: none;
-  color: #3ec1d5;
+  color: #f9f9f9;
 }
 
 .contact-box i {
@@ -196,7 +207,8 @@ header, .navbar {
   height: 55px;
   line-height: 55px;
   margin: 40px;
-  font-size: 50px;
+  font-size: 30px;
+  padding: 3px;
 }
 
 .contact-title {
@@ -218,7 +230,7 @@ header, .navbar {
 }
 
 #contact-form .main-btn:hover {
-  color: #3ec1d5;
+  color: #F9F9F9;
 }
 
 .espaco-footer {
@@ -236,28 +248,45 @@ footer {
 .footer-title {
   text-align: center;
   font-size: 40px;
-  padding-top: 50px;
-  margin-top: 50px;
 }
 
 /* Copy-area */
-#copy-area .container {
+#copy-area-index .container {
   padding: 10px 0;
   text-align: center;
 }
 
-#copy-area .container p {
+#copy-area-index .container p {
   margin-bottom: 0;
 }
 
-#copy-area .container a {
+#copy-area-index .container a {
   font-weight: bold;
   color: #444;
 }
 
-#copy-area .container a:hover {
+#copy-area-index .container a:hover {
   text-decoration: none;
-  color: #3ec1d5;
+  color: #F9F9F9;
+}
+
+#copy-area-login .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area-login .container p {
+  margin-bottom: 0;
+}
+
+#copy-area-login .container a {
+  font-weight: bold;
+  color: #444;
+}
+
+#copy-area-login .container a:hover {
+  text-decoration: none;
+  color: #F9F9F9;
 }
 
 /* Descrição e Apelo*/
@@ -308,5 +337,23 @@ footer {
 
 #about-area .container {
   padding-bottom: 0;
+}
+
+/* Serviços */
+#nova-atv {
+  position: absolute;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container-fluid-serv {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid-serv {
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
