@@ -206,14 +206,14 @@ header, .navbar {
 
 /* Desenvolvedores */
 
-.card{
+#card-desenvolvedores{
   border-radius: 10%;
   border-width: 0;
   background: black;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 }
 
-.card-body, .card-title, .card-text{
+#card-corpo, #card-titulo, #card-texto{
   text-align: center;
   color: white;
 }
@@ -228,7 +228,7 @@ header, .navbar {
   padding: 20px 30px 30px 20px;
 }
 
-.card:hover{
+#card-desenvolvedores:hover{
   background: rgb(0, 119, 255);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
