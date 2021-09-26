@@ -63,6 +63,19 @@ header, .navbar {
   border-bottom: 3px solid #FFF;
 }
 
+.navbar-text {
+  color:#FFF;
+}
+
+#sigla {
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+#titulo-comp {
+  font-size: smaller;
+}
+
 /* Slider */
 .container-fluid {
   padding: 0;
@@ -202,3 +215,53 @@ header, .navbar {
   margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*Serviços*/
+
+/*#card-servicos1{
+  position:relative;
+  margin-top: -600px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}*/
+
+#card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
+  position:relative;
+  margin-top: -600px;
+  margin-bottom: 30px;
+  color:#444;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*#card-servicos3 {
+  position:relative;
+  margin-top: -600px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}*/
+
+/*.card-header{
+  position:relative;
+  margin-top:500px;
+}*/
+
+#nova-atv {
+  position:fixed;
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+#ampulheta {
+  width: 200px;
+  height: 200px;
+}
+
+/*#cronometro {
+  padding: 5px;
+  color:#FFF;
+  background-color: black;
+  border-radius: 5px;
+}*/
