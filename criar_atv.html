@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
     <link rel="shortcut icon" href="img/STARFOCUS - logo.ico">
     <link rel="stylesheet" href="style.css">
 
@@ -29,7 +31,7 @@
                 <div class="navbar-nav">
                   <a class="nav-item nav-link" id="home-menu" href="index.html"><span>Home</span></a>
                   <a class="nav-item nav-link" id="services-menu" href="servicos_atv.html">Serviços</a>
-                  <a class="nav-item nav-link" id="team-menu" href="#">Desenvolvedores</a>
+                  <a class="nav-item nav-link" id="team-menu" href="desenvolvedores.htm">Desenvolvedores</a>
                   <a class="nav-item nav-link" id="portfolio-menu" href="login.htm">Login</a>
                 </div>
               </div>
@@ -37,6 +39,7 @@
         </div>
     </header>
 
+    <main>
     <div class="container-fluid">
         <div class="card text-center" id="card-servicos4">
             <div class="card-header">
@@ -45,7 +48,7 @@
                 <a class="nav-link active" href="#">Minhas atividades</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Pomodoro</a>
+                <a class="nav-link" href="servicos_pomodoro.html">Pomodoro</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="servicos_desempenho.html">Desempenho</a>
@@ -81,6 +84,53 @@
             </div>
         </div> 
     </div>
+    </main>
 
+    <!-- Footer -->
+
+    <footer>
+        <div id="contact-area-criar_atv">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="main-title footer-title">Entre em contato conosco</h3>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="bi bi-github"></i>
+                <p><span class="contact-title">Nos siga:</span> <a href="https://github.com/JaironHenrique/app-de-gerenciamento" id="git_starfocus" target="blank">STAR FOCUS</a></p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="bi bi-envelope-fill"></i>
+                <p><span class="contact-title">Envie um e-mail:</span> <e-mail>contato.star.focus@gmail.com</e-mail></p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="bi bi-instagram"></i>
+                <p><span class="contact-title">Envie uma direct:</span> @star.focus</p>
+              </div>
+              <div class="col-md-6" id="msg-box">
+                <p>Nos deixe uma mensagem:</p>
+              </div>
+              <div class="col-md-6" id="contact-form">
+                <form action="">
+                  <input type="email" class="form-control" placeholder="E-mail" name="email">
+                  <input type="email" class="form-control" placeholder="Assunto" name="subject">
+                  <textarea class="form-control" rows="3" placeholder="Sua mensagem" name="message"></textarea>
+                  <input type="submit" class="main-btn" value="Enviar">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="copy-area-criar_atv">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Desenvolvido por <a href="index.html" target="_blank">S.T.A.R.F.O.C.U.S</a> &copy; 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
