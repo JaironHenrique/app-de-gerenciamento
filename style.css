@@ -254,7 +254,7 @@ header, .navbar {
   padding: 20px 30px 30px 20px;
 }
 
-#card-desenvolvedores:hover {
+.card-desenvolvedores:hover {
   background: #0077ff;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -297,6 +297,11 @@ header, .navbar {
   margin-top: 200px;
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.295);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.295);
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
 }
 
 .facebook, .instagram, .email, .github {
@@ -355,11 +360,6 @@ header, .navbar {
 }
 
 /* Serviços */
-.grafico{
-  width:200px;
-  height:150px;
-}
-
 #card-servicos1, #card-servicos2, #card-servicos3, #card-servicos4 {
   position: relative;
   margin-top: 30px;
@@ -402,10 +402,15 @@ header, .navbar {
   height: 100%;
 }
 
+.grafico {
+  width: 200px;
+  height: 150px;
+}
+
 /* Footer */
 #contact-area-index, #copy-area-index {
   position: relative;
-  top: 1100px;
+  top: 1380px;
   text-align: center;
 }
 
@@ -415,15 +420,15 @@ header, .navbar {
   text-align: center;
 }
 
-#contact-area-desenvolvedores, #copy-area-desenvolvedores {
+#contact-area-des, #copy-area-des {
   position: relative;
-  top: 3400px;
+  top: 3100px;
   text-align: center;
 }
 
 #contact-area-pom, #copy-area-pom {
   position: relative;
-  top: 500px;
+  top: 0px;
   text-align: center;
 }
 
@@ -432,12 +437,6 @@ header, .navbar {
   top: 200px;
   text-align: center;
   z-index: -1;
-}
-
-#contact-area-des, #copy-area-des {
-  position: relative;
-  top: 3200px;
-  text-align: center;
 }
 
 .contact-box {
@@ -512,21 +511,21 @@ footer {
 }
 
 /* Copy-area */
-#copy-area-index .container, #copy-area-login .container, #copy-area-desenvolvedores .container, #copy-area-atv .container, #copy-area-pom .container, #copy-area-criar_atv .container, #copy-area-des .container {
+#copy-area-index .container, #copy-area-login .container, #copy-area-atv .container, #copy-area-pom .container, #copy-area-criar_atv .container, #copy-area-des .container {
   padding: 10px 0;
   text-align: center;
 }
 
-#copy-area-index .container p, #copy-area-login .container p, #copy-area-desenvolvedores .container p, #copy-area-atv .container p, #copy-area-pom .container p, #copy-area-criar_atv .container p, #copy-area-des .container p {
+#copy-area-index .container p, #copy-area-login .container p, #copy-area-atv .container p, #copy-area-pom .container p, #copy-area-criar_atv .container p, #copy-area-des .container p {
   margin-bottom: 0;
 }
 
-#copy-area-index .container a, #copy-area-login .container a, #copy-area-desenvolvedores .container a, #copy-area-atv .container a, #copy-area-pom .container a, #copy-area-criar_atv .container a, #copy-area-des .container a {
+#copy-area-index .container a, #copy-area-login .container a, #copy-area-atv .container a, #copy-area-pom .container a, #copy-area-criar_atv .container a, #copy-area-des .container a {
   font-weight: bold;
   color: #444;
 }
 
-#copy-area-index .container a:hover, #copy-area-login .container a:hover, #copy-area-desenvolvedores .container a:hover, #copy-area-atv .container a:hover, #copy-area-pom .container a:hover, #copy-area-criar_atv .container a:hover, #copy-area-des .container a:hover {
+#copy-area-index .container a:hover, #copy-area-login .container a:hover, #copy-area-atv .container a:hover, #copy-area-pom .container a:hover, #copy-area-criar_atv .container a:hover, #copy-area-des .container a:hover {
   text-decoration: none;
   color: #F9F9F9;
 }
