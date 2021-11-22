@@ -1,0 +1,83 @@
+{% extends "template.htm" %}
+{% load static %}
+
+{% block cabecalho %}
+	<title>Minhas atividades | S.T.A.R.F.O.C.U.S.</title>
+{% endblock %}
+{% block estilo %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+    
+
+{% block conteudo %}
+  <main>
+
+    <!--Card Serviços-->
+    
+    <div class="container-fluid espaco-footer">
+      <div class="card text-center" id="card-servicos1">
+          <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+              <a class="nav-link active" href="#" id="aba1-ativa">Minhas atividades</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="servicos_pomodoro.html" id="aba2">Pomodoro</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="servicos_desempenho.html" id="aba3">Desempenho</a>
+              </li>
+          </ul>
+          </div>
+          <div class="card-body">
+            <p class="card-text"> <i title = "Cada estrela é um copo de água" class="bi-info-circle-fill" role = "img"></i> Beber água:
+                <i class="bi-star-fill" role="img" style="color:yellow"></i>
+                <i class="bi-star-fill" role="img" style="color:yellow"></i>
+                <i class="bi-star-fill" role="img" style="color:yellow"></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <a href="" class="btn btn-primary">Adicionar estrela</a>
+                <a href="" class="btn btn-primary">Remover estrela</a>
+            </p>
+            <p class="card-text"> <i title = "Cada estrela é um pomodoro" class="bi-info-circle-fill" role = "img"></i> Estudar Linguagens de Programação:  
+                <i class="bi-star-fill" role="img" style="color:yellow"></i>
+                <i class="bi-star-fill" role="img" style="color:yellow"></i>
+                <i class="bi-star-fill" role="img" ></i>
+                <a href="" class="btn btn-primary">Adicionar estrela</a>
+                <a href="" class="btn btn-primary">Remover estrela</a></p>
+            <a href="criar_atv.html" class="btn btn-primary">Nova atividade</a>
+            </div>
+      </div>
+  </div>
+
+    <!--"Pop-up" para criar tarefa/atividade-->
+
+    <div class = "container" id="nova-atv">
+        <div class="justify-content-center align-items-center row">
+            <div class="col-4">
+                <form class="formlogin">
+                    <div class="text-center mb-3">
+                        <h2>O que você gostaria de monitorar?</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Digite um rótulo para sua atividade" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="Número de estrelas" class="form-control"/>
+                  </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" placeholder="Descrição (opcional)" name="message"></textarea>
+                    </div>
+                    <div>
+                        <a class="btn btn-danger btn-block" href="servicos_atv.html" role="button">Cancelar</a>
+                        <a class="btn btn-success btn-block" href="#" role="button">Criar atividade</a> 
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+    </main>
+{% endblock %}

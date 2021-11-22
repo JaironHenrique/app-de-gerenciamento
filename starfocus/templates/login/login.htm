@@ -1,0 +1,34 @@
+{% extends "template.htm" %}
+{% load static %}
+
+{% block cabecalho %}
+	<title>Login | S.T.A.R.F.O.C.U.S.</title>
+{% endblock %}
+{% block estilo %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+    
+
+{% block conteudo %}
+	<div class = "container" id="container-login">
+        <div class="justify-content-center align-items-center row">
+            <div class="col-4">
+                <form class="formlogin">
+                    <div class="text-center mb-3">
+                        <h2>Fazer login</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Informe seu usuário" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Informe sua senha" class="form-control"/>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary btn-block" href="criar_conta.htm" role="button">Criar conta</a>
+                        <a class="btn btn-success btn-block" href="servicos_atv.html" role="button">Logar no sistema</a> 
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+{% endblock %}
