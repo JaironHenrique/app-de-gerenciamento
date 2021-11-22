@@ -1,0 +1,48 @@
+{% extends "template.htm" %}
+{% load static %}
+
+{% block cabecalho %}
+	<title>Pomodoro | S.T.A.R.F.O.C.U.S.</title>
+{% endblock %}
+{% block estilo %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+    
+
+{% block conteudo %}
+  <div class="container-fluid espaco-footer">
+        <div class="card text-center" id="card-servicos2">
+            <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                <a class="nav-link" href="servicos_atv.html" id="aba1">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#" id="aba2-ativa">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="servicos_desempenho.html" id="aba3">Desempenho</a>
+                </li>
+            </ul>
+            </div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Título especial</h5>-->
+            <!--<p class="card-text">[Pensar em como vamos fazer o pomodoro.]</p>-->
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Concentre-se!</h1>
+                    <br>
+                    <div class="card">
+                        <div class="card-body" id="cronometro"><h1>30:00.00</h1></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/ampulheta.png" alt="Ampulheta do Pomodoro" id="ampulheta"/>
+                </div>
+              </div>
+              <br>
+            <a href="#" class="btn btn-primary">Iniciar Pomodoro</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
