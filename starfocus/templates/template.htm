@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,12 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     
-    <link rel="shortcut icon" href="img/STARFOCUS-logo.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="{% static 'img/STARFOCUS-logo.ico' %}">
+    
     {% block cabecalho %}
 		<title>Template</title>
     {% endblock %}
-    {% block estilo %}{% endblock %}
+    {% block estilo %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    {% endblock %}
 </head>
 
 <body>

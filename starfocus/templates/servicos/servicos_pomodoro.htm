@@ -15,13 +15,13 @@
             <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                <a class="nav-link" href="servicos_atv.html" id="aba1">Minhas atividades</a>
+                <a class="nav-link" href="{% url 'servicos' %}" id="aba1">Minhas atividades</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link active" href="#" id="aba2-ativa">Pomodoro</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="servicos_desempenho.html" id="aba3">Desempenho</a>
+                <a class="nav-link" href="{% url 'desempenho' %}" id="aba3">Desempenho</a>
                 </li>
             </ul>
             </div>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/ampulheta.png" alt="Ampulheta do Pomodoro" id="ampulheta"/>
+                    <img src="{% static 'img/ampulheta.png' %}" alt="Ampulheta do Pomodoro" id="ampulheta"/>
                 </div>
               </div>
               <br>

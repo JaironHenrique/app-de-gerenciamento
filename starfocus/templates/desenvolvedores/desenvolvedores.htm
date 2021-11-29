@@ -2,10 +2,7 @@
 {% load static %}
 
 {% block cabecalho %}
-	<title>Login | S.T.A.R.F.O.C.U.S.</title>
-{% endblock %}
-{% block estilo %}
-  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<title>Desenvolvedores | S.T.A.R.F.O.C.U.S.</title>
 {% endblock %}
     
 
@@ -20,7 +17,7 @@
 
           <div class="col-md-3">
             <div class="card card-desenvolvedores">
-              <a class="card-link" href="#amanda"><img src="img/amanda.jpg" class="card-img-top" alt="Imagem de Perfil 1">
+              <a class="card-link" href="#amanda"><img src="{% static 'img/amanda.jpg' %}" class="card-img-top" alt="Imagem de Perfil 1">
                 <div class="card-body card-corpo">
                   <h5 class="card-title card-titulo">Amanda Perez</h5>
                   <p class="card-text card-palavras">Ciência de Dados - FGV EMAp</p>
@@ -31,7 +28,7 @@
 
           <div class="col-md-3">
             <div class="card card-desenvolvedores">
-              <a class="card-link" href="#ezequiel"><img src="img/ezequiel.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+              <a class="card-link" href="#ezequiel"><img src="{% static 'img/ezequiel.jpg' %}" class="card-img-top" alt="Imagem de Perfil 2">
                 <div class="card-body card-corpo">
                   <h5 class="card-title card-titulo">Ezequiel Braga</h5>
                   <p class="card-text card-palavras">Matemática Aplicada - FGV EMAp</p>
@@ -42,7 +39,7 @@
 
           <div class="col-md-3">
             <div class="card card-desenvolvedores">
-              <a class="card-link" href="#jairon"><img src="img/jairon.jpg" class="card-img-top" alt="Imagem de Perfil 3">
+              <a class="card-link" href="#jairon"><img src="{% static 'img/jairon.jpg' %}" class="card-img-top" alt="Imagem de Perfil 3">
                 <div class="card-body card-corpo">
                   <h5 class="card-title card-titulo">Jairon Henrique</h5>
                   <p class="card-text card-palavras">Matemática Aplicada - FGV EMAp</p>
@@ -53,7 +50,7 @@
 
           <div class="col-md-3">
             <div class="card card-desenvolvedores">
-              <a class="card-link" href="#sofia"><img src="img/sofia.jpg" class="card-img-top" alt="Imagem de Perfil 4">
+              <a class="card-link" href="#sofia"><img src="{% static 'img/sofia.jpg' %}" class="card-img-top" alt="Imagem de Perfil 4">
                 <div class="card-body card-corpo">
                   <h5 class="card-title card-titulo">Sofia Lakschevitz</h5>
                   <p class="card-text card-palavras">Matemática Aplicada - FGV EMAp</p>
@@ -84,7 +81,7 @@
             <a href="https://github.com/Perez-Amanda" target="_blank" class="bi bi-github github"></a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="img/amanda.jpg" alt="Amanda"/>
+            <img class="img-fluid" src="{% static 'img/amanda.jpg' %}" alt="Amanda"/>
           </div>
         </div>
       </div>
@@ -108,7 +105,7 @@
             <a href="https://github.com/EzequielEBS" target="_blank" class="bi bi-github github"></a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="img/ezequiel.jpg" alt="Ezequiel"/>
+            <img class="img-fluid" src="{% static 'img/ezequiel.jpg' %}" alt="Ezequiel"/>
           </div>
         </div>
       </div>
@@ -138,7 +135,7 @@
             <a href="https://github.com/JaironHenrique" target="_blank" class="bi bi-github github"></a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="img/jairon.jpg" alt="Jairon"/>
+            <img class="img-fluid" src="{% static 'img/jairon.jpg' %}" alt="Jairon"/>
           </div>
         </div>
       </div>
@@ -163,7 +160,7 @@
             <a href="https://github.com/sofialakschevitz" target="_blank" class="bi bi-github github"></a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="img/sofia.jpg" alt="Sofia"/>
+            <img class="img-fluid" src="{% static 'img/sofia.jpg' %}" alt="Sofia"/>
           </div>
         </div>
       </div>

@@ -1,8 +1,10 @@
+{% load static %}
+
 <header>
     <div class = "container" id = 'nav-container'>
         <nav class = "navbar navbar-expand-lg fixed-top">
             <a href="#">
-                <img id = "logo" src="img/logotipo.png" alt = "logotipo">
+                <img id = "logo" src="{% static 'img/logotipo.png' %}" alt = "logotipo">
             </a> 
             
             <div class="navbar-text">
@@ -15,10 +17,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
-                <a class="nav-item nav-link" id="services-menu" href="servicos_atv.html">Serviços</a>
-                <a class="nav-item nav-link" id="team-menu" href="desenvolvedores.htm">Desenvolvedores</a>
-                <a class="nav-item nav-link" id="portfolio-menu" href="login.htm">Login</a>
+                <a class="nav-item nav-link" id="home-menu" href="{% url 'index' %}">Home</a>
+                <a class="nav-item nav-link" id="services-menu" href="{% url 'servicos' %}">Serviços</a>
+                <a class="nav-item nav-link" id="team-menu" href="{% url 'desenvolvedores' %}">Desenvolvedores</a>
+                <a class="nav-item nav-link" id="portfolio-menu" href="{% url 'login' %}">Login</a>
             </div>
             </div>
         </nav>
