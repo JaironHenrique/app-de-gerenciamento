@@ -15,10 +15,10 @@
             <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                <a class="nav-link" href="servicos_atv.html" id="aba1">Minhas atividades</a>
+                <a class="nav-link" href="{% url 'servicos' %}" id="aba1">Minhas atividades</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="servicos_pomodoro.html" id="aba2">Pomodoro</a>
+                <a class="nav-link" href="{% url 'pomodoro' %}" id="aba2">Pomodoro</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link active" href="#" id="aba3-ativa">Desempenho</a>
@@ -29,13 +29,13 @@
               <div class="col-md-4">
                   <h5>Beber água</h5>
                   <br>
-                  <img src="img/grafico_generico.jpg" alt="Gráfico genérico para ilustrar" class="grafico"/>
+                  <img src="{% static 'img/grafico_generico.jpg' %}" alt="Gráfico genérico para ilustrar" class="grafico"/>
                   <br>
               </div>
               <div class="col-md-4">
                 <h5>Estudar Linguagens de Programação</h5>
                 <br>
-                <img src="img/grafico_generico.jpg" alt="Gráfico genérico para ilustrar" class="grafico"/>
+                <img src="{% static 'img/grafico_generico.jpg' %}" alt="Gráfico genérico para ilustrar" class="grafico"/>
                 <br>
               </div>
               <div class="col-md-4">

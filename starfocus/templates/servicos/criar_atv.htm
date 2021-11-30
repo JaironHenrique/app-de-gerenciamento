@@ -22,10 +22,10 @@
               <a class="nav-link active" href="#" id="aba1-ativa">Minhas atividades</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="servicos_pomodoro.html" id="aba2">Pomodoro</a>
+              <a class="nav-link" href="{% url 'pomodoro' %}" id="aba2">Pomodoro</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="servicos_desempenho.html" id="aba3">Desempenho</a>
+              <a class="nav-link" href="{% url 'desempenho' %}" id="aba3">Desempenho</a>
               </li>
           </ul>
           </div>
@@ -48,7 +48,7 @@
                 <i class="bi-star-fill" role="img" ></i>
                 <a href="" class="btn btn-primary">Adicionar estrela</a>
                 <a href="" class="btn btn-primary">Remover estrela</a></p>
-            <a href="criar_atv.html" class="btn btn-primary">Nova atividade</a>
+            <a href="{% url 'criar_atv' %}" class="btn btn-primary">Nova atividade</a>
             </div>
       </div>
   </div>
@@ -72,7 +72,7 @@
                       <textarea class="form-control" rows="5" placeholder="Descrição (opcional)" name="message"></textarea>
                     </div>
                     <div>
-                        <a class="btn btn-danger btn-block" href="servicos_atv.html" role="button">Cancelar</a>
+                        <a class="btn btn-danger btn-block" href="{% url 'servicos' %}" role="button">Cancelar</a>
                         <a class="btn btn-success btn-block" href="#" role="button">Criar atividade</a> 
                     </div>
                 </form>

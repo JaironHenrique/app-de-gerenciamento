@@ -19,8 +19,12 @@ from starfocus import views as views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r"login/", include("login.urls")),
     path("", views.index, name="index"),
-    path(r"servicos/", include("servicos.urls")),
-    path(r"desenvolvedores/", include("desenvolvedores.urls"))
+    path("servicos/", views.servicos, name="servicos"),
+    path("criar_atv/", views.criar_atv, name="criar_atv"),
+    path("desempenho/", views.desempenho, name="desempenho"),
+    path("pomodoro/", views.pomodoro, name="pomodoro"),
+    path("login/", views.login, name="login"),
+    path("criar_conta/", views.criar_conta, name="criar_conta"),
+    path("desenvolvedores/", views.desenvolvedores, name="desenvolvedores")
 ]
