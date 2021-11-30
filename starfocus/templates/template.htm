@@ -25,6 +25,9 @@
         <p>Conteúdo padrão</p>
     {% endblock %}
     
-    {% include "rodape.htm" %}
+    {% block rodape %}
+        {% include "rodape.htm" %}
+    {% endblock %}
+    
 </body>
 </html>

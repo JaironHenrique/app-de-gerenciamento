@@ -131,11 +131,11 @@ header, .navbar {
   text-decoration: none;
 }
 
-.carousel-caption.d-md-block h2 {
+.carousel-caption .d-md-block h2 {
   text-shadow: #000 2px 2px;
 }
 
-.carousel-caption.d-md-block p {
+.carousel-caption .d-md-block p {
   text-shadow: #000 0.5px 0.5px;
 }
 
