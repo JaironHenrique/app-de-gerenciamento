@@ -26,5 +26,6 @@ urlpatterns = [
     path("pomodoro/", views.pomodoro, name="pomodoro"),
     path("login/", views.login, name="login"),
     path("criar_conta/", views.criar_conta, name="criar_conta"),
-    path("desenvolvedores/", views.desenvolvedores, name="desenvolvedores")
+    path("desenvolvedores/", views.desenvolvedores, name="desenvolvedores"),
+    path('atividades/', include('atividades.urls'))
 ]
