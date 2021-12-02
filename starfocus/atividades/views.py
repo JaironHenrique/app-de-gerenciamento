@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
-from atividades.models import Atividade
+from atividades.models import Atividade, Usuario
 import random
 from datetime import datetime, timedelta
 import numpy as np
+from faker import Faker
 
 # Create your views here.
 
@@ -13,6 +14,13 @@ def index(request):
     lista_atv = Atividade.objects.all()
     for atv in lista_atv:
         msg += str(atv)+"<br>"
+    return HttpResponse(msg)
+
+def index_2(request):
+    msg = ""
+    lista_user = Usuario.objects.all()
+    for user in lista_user:
+        msg += str(user)+"<br>"
     return HttpResponse(msg)
 
 def registrar(request):
@@ -32,3 +40,12 @@ def registrar(request):
         atividade.save()
     
     return HttpResponse("Nome: " + nome + " - Descrição: " + str(descricao) + " - Duração: " + str(duracao) + " - Data: " + str(data))
+
+def registrar_user(request):
+    faker = Faker('pt_BR')
+    for i in range(200):
+        tempo = random.randint(1,10)
+        nome = faker.name()
+        user = Usuario(nome=nome, tempo=tempo)
+        user.save()
+    return HttpResponse("Nome: " + nome + " - Tempo:" + str(tempo))
