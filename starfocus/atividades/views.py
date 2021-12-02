@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 from atividades.models import Atividade, Usuario
-# import random
-# from datetime import datetime, timedelta
-# import numpy as np
-# from faker import Faker
+import random
+from datetime import datetime, timedelta
+import numpy as np
+from faker import Faker
 
 def mostrar_atvs(request):
     msg = ""
@@ -26,7 +26,7 @@ def mostrar_users(request):
 #                   "Praticar exercícios físicos":"Descrição_3","Estudar Economia":"Descrição_4",
 #                   "Fazer atividades":"Descrição_5"}
 #     lista_atividades = list(atividades.keys())
-#     datas = np.arange(np.datetime64('2021-01-01'), np.datetime64('2021-12-31'))
+#     datas = np.arange(np.datetime64('2021-12-01'), np.datetime64('2021-12-31'))
 #     datas = datas.tolist()
     
 #     for i in range(200):
@@ -42,7 +42,7 @@ def mostrar_users(request):
 # def registrar_user(request):
 #     faker = Faker('pt_BR')
 #     for i in range(200):
-#         tempo = random.randint(1,10)
+#         tempo = random.randint(1,1000)
 #         nome = faker.name()
 #         user = Usuario(nome=nome, tempo=tempo)
 #         user.save()
