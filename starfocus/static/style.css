@@ -377,12 +377,12 @@ header, .navbar {
   top: 100px;
 }
 
-#aba1-ativa, #aba2-ativa, #aba3-ativa {
+#aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa {
   background-color: #5a2d86;
   border-color: rgba(63, 32, 95, 0.5);
 }
 
-.card-text, #aba1, #aba2, #aba3, #aba4, #aba5, #aba1-ativa, #aba2-ativa, #aba3-ativa {
+.card-text, #aba1, #aba2, #aba3, #aba4, #aba5, #aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa {
   color: #FFF;
 }
 
@@ -423,6 +423,12 @@ header, .navbar {
 #contact-area-des, #copy-area-des {
   position: relative;
   top: 3100px;
+  text-align: center;
+}
+
+#contact-area-pdt, #copy-area-pdt {
+  position: relative;
+  top: 400px;
   text-align: center;
 }
 
