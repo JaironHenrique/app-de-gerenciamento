@@ -21,8 +21,5 @@ def servicos(request):
 def criar_atv(request):
     return render(request, "servicos/criar_atv.htm")
 
-def desempenho(request):
-    return render(request, "servicos/servicos_desempenho.htm")
-
 def pomodoro(request):
     return render(request, "servicos/servicos_pomodoro.htm")

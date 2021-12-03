@@ -377,12 +377,12 @@ header, .navbar {
   top: 100px;
 }
 
-#aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa {
+#aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa, #aba6-ativa, #aba7-ativa {
   background-color: #5a2d86;
   border-color: rgba(63, 32, 95, 0.5);
 }
 
-.card-text, #aba1, #aba2, #aba3, #aba4, #aba5, #aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa {
+.card-text, #aba1, #aba2, #aba3, #aba4, #aba5, #aba6, #aba7, #aba1-ativa, #aba2-ativa, #aba3-ativa, #aba4-ativa, #aba5-ativa, #aba6-ativa, #aba7-ativa {
   color: #FFF;
 }
 

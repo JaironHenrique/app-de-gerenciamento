@@ -22,7 +22,6 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("servicos/", views.servicos, name="servicos"),
     path("criar_atv/", views.criar_atv, name="criar_atv"),
-    path("desempenho/", views.desempenho, name="desempenho"),
     path("pomodoro/", views.pomodoro, name="pomodoro"),
     path("login/", views.login, name="login"),
     path("criar_conta/", views.criar_conta, name="criar_conta"),
