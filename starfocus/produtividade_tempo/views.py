@@ -9,7 +9,7 @@ import os
 import produtividade_tempo
 
 
-def pagina(request):
+def produtividade(request):
     """ 
     View demonstrating how to display a graph object
     on a web page with Plotly. 
