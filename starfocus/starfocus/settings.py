@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "atividades",
     "produtividade_tempo",
-    "top"
+    "top",
+    "desempenho_atividades",
 ]
 
 MIDDLEWARE = [
