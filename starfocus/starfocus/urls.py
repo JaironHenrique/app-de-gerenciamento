@@ -28,5 +28,6 @@ urlpatterns = [
     path("criar_conta/", views.criar_conta, name="criar_conta"),
     path("desenvolvedores/", views.desenvolvedores, name="desenvolvedores"),
     path('atividades/', include('atividades.urls')),
-    path('produtividade_ao_longo_do_tempo/', include('produtividade_tempo.urls'))
+    path('produtividade_ao_longo_do_tempo/', include('produtividade_tempo.urls')),
+    path('top/', include('top.urls'))
 ]

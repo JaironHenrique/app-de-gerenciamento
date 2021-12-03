@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "atividades",
-    "produtividade_tempo"
+    "produtividade_tempo",
+    "top"
 ]
 
 MIDDLEWARE = [
