@@ -1,11 +1,88 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Produtividade</title>
-    </head>
-    <body>
-        {% autoescape off %}
-            {{ plot_div }}
-        {% endautoescape %}
-    </body>
-</html>
+{% extends "template.htm" %}
+{% load static %}
+
+{% block cabecalho %}
+	<title>Produtividade dos usuários | S.T.A.R.F.O.C.U.S.</title>
+{% endblock %}
+{% block estilo %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+    
+
+{% block conteudo %}
+	<div class="container-fluid espaco-footer">
+        <div class="card text-center" id="card-servicos1">
+            <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'servicos' %}" id="aba1">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'pomodoro' %}" id="aba2">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'desempenho' %}" id="aba3">Desempenho</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'top_user' 10 %}" id="aba4">Top pessoas produtivas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#" id="aba5-ativa">Produtividade dos usuários</a>
+                </li>
+            </ul>
+            </div>
+            <div class="card-body">
+                {% autoescape off %}
+                    {{ plot_div }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </div>
+
+    {% block rodape%}
+    <footer>
+    <div id="contact-area-pdt">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title footer-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-github"></i>
+              <p><span class="contact-title">Nos siga:</span> <a href="https://github.com/JaironHenrique/app-de-gerenciamento" id="git_starfocus" target="blank">STAR FOCUS</a></p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-envelope-fill"></i>
+              <p><span class="contact-title">Envie um e-mail:</span> <e-mail>contato.star.focus@gmail.com</e-mail></p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-instagram"></i>
+              <p><span class="contact-title">Envie uma direct:</span> @star.focus</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="#">
+                <input type="email" class="form-control" placeholder="E-mail" name="email">
+                <input type="email" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem" name="message"></textarea>
+                <input type="submit" class="main-btn" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="copy-area-pdt">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="index.html" target="_blank">S.T.A.R.F.O.C.U.S</a> &copy; 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {%endblock%}
+{% endblock %}

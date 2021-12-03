@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 from atividades.models import Atividade, Usuario
-import random
-from datetime import datetime, timedelta
-import numpy as np
-from faker import Faker
+# import random
+# from datetime import datetime, timedelta
+# import numpy as np
+# from faker import Faker
 
 def mostrar_atvs(request):
     msg = ""

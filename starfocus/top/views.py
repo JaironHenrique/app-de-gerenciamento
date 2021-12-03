@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 
-def pagina(request, quant):
+def top_user(request, quant):
     dados = pd.read_csv(os.path.join('.','db.sqlite3_usuario.csv')).sort_values('tempo', ascending=False)
     dados.reset_index(drop=True, inplace=True)
     dados = dados.iloc[:quant]
