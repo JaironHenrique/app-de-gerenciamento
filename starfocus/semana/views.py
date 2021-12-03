@@ -12,6 +12,7 @@ def dias (request):
     dados = pd.read_csv("./db.sqlite3_atividade.csv", encoding='utf-8')
     dados["data"] = pd.to_datetime(dados["data"])
     dados["dia da semana"]= dados["data"].dt.dayofweek
+    #dados["dia da semana"]= dados["data"].map({"0": "segunda", "1": "terça", "2": "quarta", "3": "quinta", "4": "sexta", "5": "sábado", "6": "domingo", }, na_action=None)
 
 
     dados_agrupados = dados.groupby(["dia da semana"]).sum()

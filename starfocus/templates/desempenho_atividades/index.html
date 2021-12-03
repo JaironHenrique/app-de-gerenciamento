@@ -1,0 +1,40 @@
+{% extends "template.htm" %}
+{% load static %}
+
+{% block cabecalho %}
+	<title>Desempenho por atividade | S.T.A.R.F.O.C.U.S.</title>
+{% endblock %}
+{% block estilo %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+    
+
+{% block conteudo %}
+  <div class="container-fluid espaco-footer">
+        <div class="card text-center" id="card-servicos3">
+            <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'servicos' %}" id="aba1">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'pomodoro' %}" id="aba2">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'desempenho' %}" id="aba3">Desempenho</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#" id="aba3-ativa">Desempenho por atividade</a>
+                </li>
+            </ul>
+            </div>
+            <div class="card-body"><div class="row">
+                {% autoescape off %}
+                    {{ plot_div }}
+                {% endautoescape %}
+            </div>
+            <!--<p class="card-text">Desculpe, não há nenhum desempenho para exibir ainda.</p>-->
+            </div>
+        </div>
+    </div>
+{% endblock %}
