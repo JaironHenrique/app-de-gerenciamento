@@ -30,9 +30,6 @@ urlpatterns = [
     path('atividades/', include('atividades.urls')),
     path('produtividade_ao_longo_do_tempo/', include('produtividade_tempo.urls')),
     path('top/', include('top.urls')),
-<<<<<<< HEAD
     path('semana/', include("semana.urls")),
-=======
     path('desempenho_atividades/', include('desempenho_atividades.urls')),
->>>>>>> 6c99d131d9e26b1f8b9d87fc9488c85333f35155
 ]

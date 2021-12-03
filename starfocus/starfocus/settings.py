@@ -42,11 +42,8 @@ INSTALLED_APPS = [
     "atividades",
     "produtividade_tempo",
     "top",
-<<<<<<< HEAD
-    "semana"
-=======
+    "semana",
     "desempenho_atividades",
->>>>>>> 6c99d131d9e26b1f8b9d87fc9488c85333f35155
 ]
 
 MIDDLEWARE = [
