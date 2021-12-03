@@ -15,11 +15,10 @@ def dias (request):
     dados = pd.read_csv(os.path.join('.','db.sqlite3_atividade.csv'))
     dados["data"] = pd.to_datetime(dados["data"])
     dados["dia da semana"]= dados["data"].dt.dayofweek
-    dados["dia da semana"]= dados["dia da semana"].map({0: "segunda", 1: "terça", 2: "quarta", 3: "quinta", 4: "sexta", 5: "sábado", 6: "domingo", }, na_action=None)
-
 
     dados_agrupados = dados.groupby(["dia da semana"]).sum()
-    dados_ordenados = dados_agrupados.sort_values(by=["duracao"], ascending=False)["duracao"]
+    dados_ordenados = dados_agrupados.sort_values(by=["dia da semana"], ascending=True)["duracao"]
+    dados_ordenados.index = dados_ordenados.index.map({0: "segunda", 1: "terça", 2: "quarta", 3: "quinta", 4: "sexta", 5: "sábado", 6: "domingo", }, na_action=None)
     lista_dia_semana = list(dados_ordenados.index)
     lista_duracao = list(dados_ordenados.values)
 
